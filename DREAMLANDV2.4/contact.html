@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dreamland Properties CR</title>
+
+	<!-- FONTS&ICONS -->
+	<script src="https://kit.fontawesome.com/5770ce2232.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+	<!-- STYLES -->
+	<link rel="stylesheet" href="style/main.css">
+	<!-- SWIPERJS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<!-- NAVBAR -->	
+	<nav class="navbar navbar-expand-lg py-2 navbar-light bg-light">
+  		<a class="navbar-brand" href="index.html"> 
+  		 	<span class="fs-5 fw-bold brand">Dreamland Properties CR.</span>
+  		</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+  		<div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+    		<ul class="navbar-nav ml-auto">
+      			<li class="nav-item">
+        			<a class="nav-link pr-5 text-uppercase" href="index.html">Home</span></a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link pr-5 text-uppercase" href="test.html">Properties</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link pr-5 text-uppercase" href="tours.html">Tours</a>
+      			</li>
+      			<li class="nav-item active">
+        			<a class="nav-link pr-5 text-uppercase" href="contact.html">Contact</a>
+      			</li>
+      			<div class="btn-group btn-toggle"> 
+    				<button class="btn btn-default">ES</button>
+    				<button class="btn btn-primary active">EN</button>
+  				</div>
+    		</ul>
+  		</div>
+	</nav>
+	
+	<section class="contact_section">
+		<h1 class="contact_header">get in touch</h1>
+
+		<div class="container">
+			<div class="contact_form row">
+				<div class="form_field col-md-6">
+					<input type="text" id="name" class="input-text">
+					<label for="name" class="label">name</label>
+				</div>
+
+				<div class="form_field col-md-6">
+					<input type="text" id="email" class="input-text">
+					<label for="email" class="label">email address</label>
+				</div>
+
+				<div class="form_field col-md-6">
+					<input type="text" id="number" class="input-text">
+					<label for="number" class="label">phone number</label>
+				</div>
+
+				<div class="form_field col-md-12">
+					<input type="text" id="message" class="input-text">
+					<label for="message" class="label">message</label>
+				</div>
+
+				<div class="form_field col-md-12 text-center">
+					<input type="submit" value="submit" class="btn btn-primary text-uppercase submit-btn">
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer class="footer-basic">
+		<hr style="padding-top: 30px;">
+		<div class="social">
+			<a href="https://www.instagram.com/dreamland_propertiescr/"><i class="icon ion-social-instagram"></i></a>
+			<a href="#"><i class="icon ion-social-snapchat"></i></a>
+			<a href="#"><i class="icon ion-social-twitter"></i></a>
+			<a href="#"><i class="icon ion-social-facebook"></i></a>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+        		<div class="col-md-6 footer-nav">
+        			<ul>
+        				<li><a href="index.html">HOME</a></li>
+        				<li><a href="properties.html">PROPERTIES</a></li>
+        				<li><a href="tours.html">TOURS</a></li>
+        				<li><a href="contact.html">CONTACT</a></li>
+        			</ul>
+        		</div>
+
+        		<div class="col-md-6">
+        			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius assumenda molestiae id provident illum mollitia, ducimus quidem dignissimos eligendi optio, corporis soluta nulla facilis omnis perspiciatis placeat deleniti, explicabo, rerum.</p>
+        		</div>
+        	</div>
+		</div>
+        
+        <p class="copyright">Dreamland Properties CR © 2021</p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+	<script>
+		// LANGUAGE TOGGLE SWITCHER
+		$('.btn-toggle').click(function() {
+    		$(this).find('.btn').toggleClass('active');  
+    
+    		if ($(this).find('.btn-primary').length>0) {
+    			$(this).find('.btn').toggleClass('btn-primary');
+    		}
+    
+    		$(this).find('.btn').toggleClass('btn-default');
+       	});
+
+		// SWIPER SLIDER
+       	var mySwiper = new Swiper('.swiper-container', {
+  			// Optional parameters
+  			loop: true,
+  			freeMode: true,
+  			centeredSlides: true,
+  			breakpoints: {
+  				299: {
+  					slidesPerView: 1,
+  					spaceBetween: 40
+  				},
+
+  				999: {
+  					slidesPerView: 3,
+  					spaceBetween: 30
+  				}
+  			}
+		});
+
+
+	</script>
+</body>
+</html>
