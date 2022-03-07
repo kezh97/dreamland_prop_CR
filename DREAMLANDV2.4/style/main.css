@@ -150,6 +150,24 @@ nav{
 }
 
 /* LISTING SECTION */
+
+.listing-prop{
+	width: 100%;
+	height: 100%;
+}
+
+.item-card{
+	width: 100%;
+	border: 1px solid #000;
+	margin: 0 2px;
+}
+
+.card-img img{
+	width: 100%;
+	height: 100%;
+}
+
+/* MODAL */
 .modal-carousel{
 	width: 100%;
 }
