@@ -152,13 +152,11 @@ nav{
 /* LISTING SECTION */
 
 .listing-prop{
-	
 	height: 100%;
 }
 
 .item-card{
-	margin: 0 2px;
-	border: 1px solid #fff;
+	border: 0px solid #fff;
 }
 
 .card-img img{
