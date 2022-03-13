@@ -151,13 +151,16 @@ nav{
 
 /* LISTING SECTION */
 
+.listing-title{
+	letter-spacing: 19.5px;
+}
+
 .listing-prop{
 	height: 100%;
 }
 
 .item-card{
 	border: 0px solid #fff;
-
 }
 
 .card-img{
