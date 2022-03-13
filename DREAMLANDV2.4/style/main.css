@@ -157,6 +157,7 @@ nav{
 
 .item-card{
 	border: 0px solid #fff;
+
 }
 
 .card-img{
@@ -169,16 +170,16 @@ nav{
 	object-fit: cover;
 }
 
-.price-tag{
-	position: absolute;
-	top: 8%;
-	right: 5.5%;
-	background-color: green;
-
+.location-name {
+	letter-spacing: 5.5px;
 }
 
-.price-tag p {
-	color: #fff;
+.details p{
+	font-size: 14px;
+}
+
+.card-description p{
+	font-size: 14px;
 }
 
 /* MODAL */
