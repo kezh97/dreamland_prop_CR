@@ -150,17 +150,16 @@ nav{
 }
 
 /* LISTING SECTION */
+#listing-property-section{
+	background: #ebebeb;
+}
 
 .listing-title{
 	letter-spacing: 19.5px;
 }
 
-.listing-prop{
-	height: 100%;
-}
-
-.item-card{
-	border: 0px solid #fff;
+#list-border{
+	border: 1px solid #fff;
 }
 
 .card-img{
@@ -179,6 +178,7 @@ nav{
 
 .details p{
 	font-size: 14px;
+	padding-top: 1rem;
 }
 
 .card-description p{
@@ -377,7 +377,7 @@ nav{
 
 @media only screen and (max-width: 500px){
 	.brand{
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	#carousel-home{
@@ -407,5 +407,9 @@ nav{
 
 	#intro h1{
 		font-size: 32px;
+	}
+
+	.listing-title{
+		letter-spacing: 1.5px;
 	}
 }
