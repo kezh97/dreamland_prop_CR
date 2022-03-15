@@ -205,6 +205,50 @@ nav{
 	max-height: 500px;
 }
 
+/* TOUR SECTION */
+.tour-intro{
+	width: 100%;
+	width: 100%;
+}
+
+.introduction{
+	width: 100%;
+	
+}
+
+.tour-img{
+	width: 100%;
+	height: 100%;
+}
+
+.tour-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.tour-descr{
+	border: 2px solid #000;
+	margin: auto;
+}
+
+.gallery{
+	width: 100%;
+	height: 100%;
+}
+
+.gallery-item{
+	width: 250px;
+	height: 250px;
+	padding: 0;
+}
+
+.gallery-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 /* CONTACT SECTION */
 
 .contact_section{
