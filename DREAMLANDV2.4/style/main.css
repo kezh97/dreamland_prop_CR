@@ -65,16 +65,16 @@ nav{
 
 /* PARALLAX SEPARATOR*/ 
 .para{
-    height: 25vh;
+	height: 100%;
 }
 
 .parallax-sep{
-    background: url("../img/beach2.jpg") center no-repeat;
-    height: 100%;
-    position: relative;
-    opacity: 0.75;
-    background-size: cover;
+    background-image: url("../img/nature2.jpg");
+    min-height: 25vh;
+   	background-position: center;
+   	background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .CR{
@@ -206,6 +206,92 @@ nav{
 }
 
 /* TOUR SECTION */
+.para-cont{
+	height: 100vh;
+	padding: 0 !important;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.para-cont::-webkit-scrollbar {
+  display: none;
+}
+
+.para-cont h1{
+	margin: 0 auto;
+	width: 90%;
+	font-size: 130px;
+	font-weight: 900;
+	line-height: 1.1;
+	letter-spacing: -2px;
+	color: #fff;
+	word-spacing: 100vh;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.parallax{
+	height: 105vh;
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+}
+
+.parallax h1{
+	color: #fff;
+	text-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.parallax:nth-child(1) h1{
+	text-align: left;
+}
+
+.parallax:nth-child(5) h1{
+	text-align: right;
+}
+
+.para-background{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transform: translateZ(-1px) scale(2);
+}
+
+.bg-1{
+	background: url("../img/nature2.jpg") center / cover;
+}
+
+.bg-2{
+	background: url("../img/nature3.jpg") center / cover;
+}
+
+.bg-3{
+	background: url("../img/nature6.jpg") center / cover;
+}
+
+.tour-content{
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+
+.tour-content h1{
+	color: #333;
+}
+
 .tour-intro{
 	width: 100%;
 }
@@ -411,6 +497,9 @@ nav{
 		font-size: 16px;
 	}
 
+	.para-cont h1{
+		font-size: 98px;
+	}
 }
 
 @media only screen and (max-width: 500px){
@@ -449,5 +538,9 @@ nav{
 
 	.listing-title{
 		letter-spacing: 1.5px;
+	}
+
+	.para-cont h1{
+		font-size: 56px;
 	}
 }
