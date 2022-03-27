@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 	<!-- Bootstrap core CSS -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- PERSONALIZE JS -->
+	<script src="JS/lazy.js"></script>
 </head>
 <body>
 	<!-- NAVBAR -->	
@@ -31,13 +33,16 @@
         			<a class="nav-link pr-5 text-uppercase" href="index.html">Home</span></a>
       			</li>
       			<li class="nav-item">
-        			<a class="nav-link pr-5 text-uppercase" href="test.html">Properties</a>
+        			<a class="nav-link pr-5 text-uppercase" href="list-properties.html">Properties</a>
       			</li>
       			<li class="nav-item">
         			<a class="nav-link pr-5 text-uppercase" href="tours.html">Tours</a>
       			</li>
       			<li class="nav-item">
         			<a class="nav-link pr-5 text-uppercase" href="contact.html">Contact</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link pr-5 text-uppercase" href="test.html">tester</a>
       			</li>
       			<div class="btn-group btn-toggle"> 
     				<button class="btn btn-default">ES</button>
@@ -64,7 +69,7 @@
   				</div>
     		</div>
     		<div class="carousel-item">
-      			<img class="" src="img/house1.jpg" alt="Second slide">
+      			<img class="" src="img/house7.jpg" alt="Second slide">
       			<div class="carousel-caption">
     				<h5>Contact us!</h5>
     				<p>Meet our best realtor.</p>
@@ -99,19 +104,19 @@
 	<section class="container py-4">
 		<div class="row">
 			<div class="col-md text-center mx-2 pt-5 pb-2 services-show">
-				<img src="img/realtor.png" alt="realtor" width="180" height="180">
+				<img loading="lazy" src="img/realtor.png" alt="realtor" width="180" height="180">
 				<h3>Best Treatment</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
 			</div>
 
 			<div class="col-md text-center mx-2 pt-5 pb-2 services-show">
-				<img src="img/realestate.png" alt="realtor" width="180" height="180">
+				<img loading="lazy" src="img/realestate.png" alt="realtor" width="180" height="180">
 				<h3>You ask it, we find it for you</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
 			</div>
 
 			<div class="col-md text-center mx-2 pt-5 pb-2 services-show">
-				<img src="img/touricon.svg" alt="realtor" width="180" height="180">
+				<img loading="lazy" src="img/touricon.svg" alt="realtor" width="180" height="180">
 				<h3>Tour Services</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
 			</div>
@@ -120,7 +125,7 @@
 
 	<!-- PARALLAX SEPARATOR --> 
   	<section class="para mt-5">
-    	<div class="parallax-sep"></div>
+    	<div class="parallax-sep lazy"></div>
   	</section>
 
 	<!-- PREVIEW PROPERTIES -->
@@ -130,7 +135,7 @@
 			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nemo, ipsa aliquam aliquid reiciendis modi iure doloribus repellat debitis earum voluptatum molestias obcaecati illum! Iure possimus quas harum esse laborum.</p>
 		</div>
 		<div class="mt-5 text-center">
-			<img class="img-fluid" src="img/house1.jpg" alt="house">
+			<img loading="lazy" class="img-fluid" src="img/house1.jpg" alt="house">
 		</div>
 	</section>	
 
@@ -152,7 +157,7 @@
 						<div class="swiper-slide">
 							<div class="property-list">
 								<div class="image">
-									<img src="img/house1.jpg" alt="">
+									<img loading="lazy" src="img/house1.jpg" alt="">
 								</div>
 								<div class="text-right">
 									<h4 class="h5">$15.000</h4>
@@ -178,7 +183,7 @@
 						<div class="swiper-slide">
 							<div class="property-list">
 								<div class="image">
-									<img src="img/house2.jpg" alt="">
+									<img loading="lazy" src="img/house7.jpg" alt="">
 								</div>
 								<div class="text-right">
 									<h4 class="h5">$15.000</h4>
@@ -203,7 +208,7 @@
 						<div class="swiper-slide">
 							<div class="property-list">
 								<div class="image">
-									<img src="img/house3.jpg" alt="">
+									<img loading="lazy" src="img/house3.jpg" alt="">
 								</div>
 								<div class="text-right">
 									<h4 class="h5">$15.000</h4>
@@ -228,33 +233,7 @@
 						<div class="swiper-slide">
 							<div class="property-list">
 								<div class="image">
-									<img src="img/house4.jpg" alt="">
-								</div>
-								<div class="text-right">
-									<h4 class="h5">$15.000</h4>
-								</div>
-								<div class="d-flex justify-content-between mb-4">
-									<div class="item">
-										<h4 class="h5 m-0">Santa Ana City</h4>
-										<p class="m-0">San José</p>
-									</div>
-
-									<div class="item d-flex align-self-center">
-										<i class="fas fa-bed mr-2 align-self-center"></i>
-										<span class="mr-1">5</span>
-										<i class="fas fa-toilet mr-2 align-self-center"></i>
-										<span class="mr-1">2</span>
-									</div>
-								</div>
-
-								<button type="button" class="btn btn-primary">Preview</button>
-							</div>
-						</div>
-
-						<div class="swiper-slide">
-							<div class="property-list">
-								<div class="image">
-									<img src="img/house5.jpg" alt="">
+									<img loading="lazy" src="img/house4.jpg" alt="">
 								</div>
 								<div class="text-right">
 									<h4 class="h5">$15.000</h4>
@@ -280,7 +259,33 @@
 						<div class="swiper-slide">
 							<div class="property-list">
 								<div class="image">
-									<img src="img/house6.jpg" alt="">
+									<img loading="lazy" src="img/house5.jpg" alt="">
+								</div>
+								<div class="text-right">
+									<h4 class="h5">$15.000</h4>
+								</div>
+								<div class="d-flex justify-content-between mb-4">
+									<div class="item">
+										<h4 class="h5 m-0">Santa Ana City</h4>
+										<p class="m-0">San José</p>
+									</div>
+
+									<div class="item d-flex align-self-center">
+										<i class="fas fa-bed mr-2 align-self-center"></i>
+										<span class="mr-1">5</span>
+										<i class="fas fa-toilet mr-2 align-self-center"></i>
+										<span class="mr-1">2</span>
+									</div>
+								</div>
+
+								<button type="button" class="btn btn-primary">Preview</button>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="property-list">
+								<div class="image">
+									<img loading="lazy" src="img/house6.jpg" alt="">
 								</div>
 								<div class="text-right">
 									<h4 class="h5">$15.000</h4>
@@ -323,7 +328,7 @@
         		<div class="col-md-6 footer-nav">
         			<ul>
         				<li><a href="index.html">HOME</a></li>
-        				<li><a href="properties.html">PROPERTIES</a></li>
+        				<li><a href="list-properties.html">PROPERTIES</a></li>
         				<li><a href="tours.html">TOURS</a></li>
         				<li><a href="contact.html">CONTACT</a></li>
         			</ul>
