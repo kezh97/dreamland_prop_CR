@@ -1,4 +1,33 @@
-<?php echo 
+<?php 
+include 'connection.php';
+
+//DB LINK
+$entrada = connect_db();
+
+//LINK CONFIRMATION
+if (!$entrada) {
+	echo '<script> console.log("Error al conectar a la base de datos.")</script>';
+}	else{
+	echo '<script> console.log("Base de datos conectada.")</script>';
+}
+
+//REQUEST
+$consulta = "SELECT ID, name FROM propiedad";
+$resultado = $entrada -> query($consulta);
+
+if ($resultado->num_rows > 0) {
+	while ($row = $resultado ->fetch_assoc()) {
+		echo "ID: " . $row["ID"]. " ".  "Name: " . $row["name"] . "<br>";
+	}
+} else{
+	echo '<script> console.log("0 resultados.")</script>';
+};
+
+$entrada->close();
+if ($entrada) {
+	echo '<script> console.log("Base de datos desconectada.")</script>';
+}
+echo 
 '<!-- CAROUSEL -->	
 	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
@@ -84,179 +113,6 @@
 		<div class="mt-5 text-center">
 			<img loading="lazy" class="img-fluid" src="img/house1.webp" alt="house">
 		</div>
-	</section>	
-
-	<!-- PROPERTY SECTION SLIDER -->
-	<section id="property-section">
-		<div class="prop-slider container">
-			<h6 class="h6 color-primary m-0">Recent</h6>
-			<h1 class="h1 h1-responsive mb-4">Recently Added Properties</h1>
-			<div class="text-right">
-				<a href="property-list.php">Find More Project <i class="fas fa-long-arrow-alt-right"></i></a>
-			</div>
-
-			<div id="property-slider">
-				<!-- Slider main container -->
-				<div class="swiper swiper-container">
-					<!-- Additional required wrapper -->
-					<div class="swiper-wrapper">
-						<!-- Slides -->
-						<div class="swiper-slide">
-							<div class="property-list">
-								<div class="image">
-									<img loading="lazy" src="img/house1.webp" alt="">
-								</div>
-								<div class="text-right">
-									<h4 class="h5">$15.000</h4>
-								</div>
-								<div class="d-flex justify-content-between mb-4">
-									<div class="item">
-										<h4 class="h5 m-0">Santa Ana City</h4>
-										<p class="m-0">San José</p>
-									</div>
-
-									<div class="item d-flex align-self-center">
-										<i class="fas fa-bed mr-2 align-self-center"></i>
-										<span class="mr-1">5</span>
-										<i class="fas fa-toilet mr-2 align-self-center"></i>
-										<span class="mr-1">2</span>
-									</div>
-								</div>
-
-								<button type="button" class="btn btn-primary">Preview</button>
-							</div>
-						</div>
-
-						<div class="swiper-slide">
-							<div class="property-list">
-								<div class="image">
-									<img loading="lazy" src="img/house7.webp" alt="">
-								</div>
-								<div class="text-right">
-									<h4 class="h5">$15.000</h4>
-								</div>
-								<div class="d-flex justify-content-between mb-4">
-									<div class="item">
-										<h4 class="h5 m-0">Santa Ana City</h4>
-										<p class="m-0">San José</p>
-									</div>
-
-									<div class="item d-flex align-self-center">
-										<i class="fas fa-bed mr-2 align-self-center"></i>
-										<span class="mr-1">5</span>
-										<i class="fas fa-toilet mr-2 align-self-center"></i>
-										<span class="mr-1">2</span>
-									</div>
-								</div>
-
-								<button type="button" class="btn btn-primary">Preview</button>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="property-list">
-								<div class="image">
-									<img loading="lazy" src="img/house3.webp" alt="">
-								</div>
-								<div class="text-right">
-									<h4 class="h5">$15.000</h4>
-								</div>
-								<div class="d-flex justify-content-between mb-4">
-									<div class="item">
-										<h4 class="h5 m-0">Santa Ana City</h4>
-										<p class="m-0">San José</p>
-									</div>
-
-									<div class="item d-flex align-self-center">
-										<i class="fas fa-bed mr-2 align-self-center"></i>
-										<span class="mr-1">5</span>
-										<i class="fas fa-toilet mr-2 align-self-center"></i>
-										<span class="mr-1">2</span>
-									</div>
-								</div>
-
-								<button type="button" class="btn btn-primary">Preview</button>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="property-list">
-								<div class="image">
-									<img loading="lazy" src="img/house4.webp" alt="">
-								</div>
-								<div class="text-right">
-									<h4 class="h5">$15.000</h4>
-								</div>
-								<div class="d-flex justify-content-between mb-4">
-									<div class="item">
-										<h4 class="h5 m-0">Santa Ana City</h4>
-										<p class="m-0">San José</p>
-									</div>
-
-									<div class="item d-flex align-self-center">
-										<i class="fas fa-bed mr-2 align-self-center"></i>
-										<span class="mr-1">5</span>
-										<i class="fas fa-toilet mr-2 align-self-center"></i>
-										<span class="mr-1">2</span>
-									</div>
-								</div>
-
-								<button type="button" class="btn btn-primary">Preview</button>
-							</div>
-						</div>
-
-						<div class="swiper-slide">
-							<div class="property-list">
-								<div class="image">
-									<img loading="lazy" src="img/house5.webp" alt="">
-								</div>
-								<div class="text-right">
-									<h4 class="h5">$15.000</h4>
-								</div>
-								<div class="d-flex justify-content-between mb-4">
-									<div class="item">
-										<h4 class="h5 m-0">Santa Ana City</h4>
-										<p class="m-0">San José</p>
-									</div>
-
-									<div class="item d-flex align-self-center">
-										<i class="fas fa-bed mr-2 align-self-center"></i>
-										<span class="mr-1">5</span>
-										<i class="fas fa-toilet mr-2 align-self-center"></i>
-										<span class="mr-1">2</span>
-									</div>
-								</div>
-
-								<button type="button" class="btn btn-primary">Preview</button>
-							</div>
-						</div>
-
-						<div class="swiper-slide">
-							<div class="property-list">
-								<div class="image">
-									<img loading="lazy" src="img/house6.webp" alt="">
-								</div>
-								<div class="text-right">
-									<h4 class="h5">$15.000</h4>
-								</div>
-								<div class="d-flex justify-content-between mb-4">
-									<div class="item">
-										<h4 class="h5 m-0">Santa Ana City</h4>
-										<p class="m-0">San José</p>
-									</div>
-
-									<div class="item d-flex align-self-center">
-										<i class="fas fa-bed mr-2 align-self-center"></i>
-										<span class="mr-1">5</span>
-										<i class="fas fa-toilet mr-2 align-self-center"></i>
-										<span class="mr-1">2</span>
-									</div>
-								</div>
-
-								<button type="button" class="btn btn-primary">Preview</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>' 
+	</section>';
+	include 'swiper.php'; 
 ?>
