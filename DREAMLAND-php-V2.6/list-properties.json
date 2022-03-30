@@ -1,0 +1,106 @@
+{
+	"list-properties":{
+		"property":[
+			{
+				"ID": "DLCR-001",
+				"name": "Villa Alegre",
+				"location": "Santa Ana, San José",
+				"rooms": "4",
+				"bath": "2",
+				"parking": "2",
+				"description": "lorem askdfhbasdijkhabsdkj ahdbgasdikjahbsdikjasdkoijansd asidjaskdinasdkjn",
+				"images":[
+					{
+						"1": "../img/house1.webp",
+						"2": "../img/house1.webp",
+						"3": "../img/house1.webp",
+						"4": "../img/house1.webp",
+						"5": "../img/house1.webp",
+						"6": "../img/house1.webp",
+						"7": "../img/house1.webp",
+					}
+				]
+			},
+			{
+				"ID": "DLCR-002",
+				"name": "Villa Alegre",
+				"location": "Santa Ana, San José",
+				"rooms": "4",
+				"bath": "2",
+				"parking": "2",
+				"description": "lorem askdfhbasdijkhabsdkj ahdbgasdikjahbsdikjasdkoijansd asidjaskdinasdkjn",
+				"images":[
+					{
+						"1": "../img/house1.webp",
+						"2": "../img/house1.webp",
+						"3": "../img/house1.webp",
+						"4": "../img/house1.webp",
+						"5": "../img/house1.webp",
+						"6": "../img/house1.webp",
+						"7": "../img/house1.webp",
+					}
+				]
+			},
+			{
+				"ID": "DLCR-003",
+				"name": "Villa Alegre",
+				"location": "Santa Ana, San José",
+				"rooms": "4",
+				"bath": "2",
+				"parking": "2",
+				"description": "lorem askdfhbasdijkhabsdkj ahdbgasdikjahbsdikjasdkoijansd asidjaskdinasdkjn",
+				"images":[
+					{
+						"1": "../img/house1.webp",
+						"2": "../img/house1.webp",
+						"3": "../img/house1.webp",
+						"4": "../img/house1.webp",
+						"5": "../img/house1.webp",
+						"6": "../img/house1.webp",
+						"7": "../img/house1.webp",
+					}
+				]
+			},
+			{
+				"ID": "DLCR-004",
+				"name": "Villa Alegre",
+				"location": "Santa Ana, San José",
+				"rooms": "4",
+				"bath": "2",
+				"parking": "2",
+				"description": "lorem askdfhbasdijkhabsdkj ahdbgasdikjahbsdikjasdkoijansd asidjaskdinasdkjn",
+				"images":[
+					{
+						"1": "../img/house1.webp",
+						"2": "../img/house1.webp",
+						"3": "../img/house1.webp",
+						"4": "../img/house1.webp",
+						"5": "../img/house1.webp",
+						"6": "../img/house1.webp",
+						"7": "../img/house1.webp",
+					}
+				]
+			},
+			{
+				"ID": "DLCR-005",
+				"name": "Villa Alegre",
+				"location": "Santa Ana, San José",
+				"rooms": "4",
+				"bath": "2",
+				"parking": "2",
+				"description": "lorem askdfhbasdijkhabsdkj ahdbgasdikjahbsdikjasdkoijansd asidjaskdinasdkjn",
+				"images":[
+					{
+						"1": "../img/house1.webp",
+						"2": "../img/house1.webp",
+						"3": "../img/house1.webp",
+						"4": "../img/house1.webp",
+						"5": "../img/house1.webp",
+						"6": "../img/house1.webp",
+						"7": "../img/house1.webp",
+					}
+				]
+			}
+		]
+	}
+}
