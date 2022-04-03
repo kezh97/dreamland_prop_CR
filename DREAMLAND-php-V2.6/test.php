@@ -40,7 +40,7 @@ $resultado = $entrada -> query($consulta);
 									<div class="card-details">
 										<div class="location_name">
 											<h5><?php  echo $row["name"]; ?></h5>
-											<p><?php  echo $row["location_name"];?></p>
+											<p><?php  echo $row["location-name"];?></p>
 											<hr class="w-75 mx-auto">
 										</div>
 										<div class="row details">
