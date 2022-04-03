@@ -1,32 +1,5 @@
 <?php 
-include 'connection.php';
 
-//DB LINK
-$entrada = connect_db();
-
-//LINK CONFIRMATION
-if (!$entrada) {
-	echo '<script> console.log("Error al conectar a la base de datos.")</script>';
-}	else{
-	echo '<script> console.log("Base de datos conectada.")</script>';
-}
-
-//REQUEST
-$consulta = "SELECT ID, name FROM propiedad";
-$resultado = $entrada -> query($consulta);
-
-if ($resultado->num_rows > 0) {
-	while ($row = $resultado ->fetch_assoc()) {
-		echo "ID: " . $row["ID"]. " ".  "Name: " . $row["name"] . "<br>";
-	}
-} else{
-	echo '<script> console.log("0 resultados.")</script>';
-};
-
-$entrada->close();
-if ($entrada) {
-	echo '<script> console.log("Base de datos desconectada.")</script>';
-}
 echo 
 '<!-- CAROUSEL -->	
 	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -53,7 +26,7 @@ echo
     		</div>
     		<div class="carousel-item">
       			<img class="" src="img/tour.webp" alt="Third slide">
-      			<div class="carousel-caption">
+      			<div class="carousel-caption" id="home-caption">
     				<h5>Explore Costa Ricas natural paradise</h5>
     				<p>One with the nature</p>
   				</div>
