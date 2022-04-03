@@ -274,6 +274,7 @@ echo '
 			        	<h4 class="modal-title" id="listing-name-label">Santa Ana, San José</h4>
 			        	<i class="fas fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
 			      	</div>
+
 			      	<div class="modal-body" id="listing-modal-body">
 			      		<div class="modal-carousel">
 			      			<div id="carousel-ind" class="carousel slide" data-ride="carousel">
@@ -283,12 +284,12 @@ echo '
 								    <li data-target="#carousel-ind" data-slide-to="2"></li>
 								  </ol>
 
-								  <div class="carousel-inner" id="list-carousel">
-								    <div class="carousel-item active">
+								  <div class="carousel-inner" >
+								    <div class="carousel-item list-carousel active">
 								      <img src="img/house1.webp" class="" alt="">
 								    </div>
 								    <div class="carousel-item">
-								      <img src="img/house4.webp" class="w-100" alt="">
+								      <img src="img/house2.webp" class="" alt="">
 								    </div>
 								    <div class="carousel-item">
 								      <img src="img/house3.webp" class="" alt="">
@@ -385,6 +386,6 @@ echo '
 		</div>	
 
 	</section>';
-
+	include 'swiper.php';
 	include 'footer.php';
 	?>
