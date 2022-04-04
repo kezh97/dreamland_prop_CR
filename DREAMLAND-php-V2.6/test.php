@@ -12,9 +12,12 @@ if (!$entrada) {
 	echo '<script> console.log("Base de datos conectada.")</script>';
 }
 
+
+
 //REQUEST
 $consulta = "SELECT ID, name, location_name, price, rooms, baths, parking, description FROM property";
 $resultado = $entrada -> query($consulta);
+
 
 ?>
 <!-- LIST AREA -->
@@ -27,7 +30,7 @@ $resultado = $entrada -> query($consulta);
 			
 			<div class="listing row text-center">
 				<?php  
-				if ($resultado->num_rows > 0) {
+				if (mysqli_num_rows($resultado) > 0) {
 
 					while ($row = $resultado ->fetch_assoc()) {
 						?>
@@ -61,8 +64,7 @@ $resultado = $entrada -> query($consulta);
 									<div class="card-description text-justify">
 										<p> <?php echo $row["description"]; ?></p>
 									</div>
-
-									<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#listing_modal">Show More</button>
+									<button type="button" class="btn btn-primary boton" data-bs-toggle="modal" data-bs-target="#listing_modal" value="<?php echo $row["ID"]; ?>">Show More</button>
 								</div>
 							</div>
 						
@@ -80,7 +82,13 @@ $resultado = $entrada -> query($consulta);
 		  	<div class="modal-dialog modal-xl">
 		    	<div class="modal-content">
 			      	<div class="modal-header">
-			        	<h4 class="modal-title" id="listing-name-label">Santa Ana, San José</h4>
+			      		<?php  
+			      			$consulta2 = "SELECT ID, name, location_name, price, rooms, baths, parking FROM property WHERE ID ='DLCR-002'";
+							$resultado2 = mysqli_query($entrada, $consulta2);
+										if (mysqli_num_rows($resultado2) > 0) {
+											while ($row1 = $resultado2 ->fetch_assoc()) {
+						?>
+			        	<h4 class="modal-title" id="listing-name-label"><?php echo $row1["ID"] ?></h4>
 			        	<i class="fas fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
 			      	</div>
 
@@ -127,25 +135,21 @@ $resultado = $entrada -> query($consulta);
 			        			<h4 class="h4 ">Overview</h4>
 			        			<hr>
 				        		<div class="row">
-				        			<?php  
-										if ($resultado->num_rows > 0) {
-
-											while ($row = $resultado ->fetch_assoc()) {
-										?>
+				        			
 					        			<div class="col-6 text-center py-2 my-1" id="modal-overview-item">
-					        				<i class="fas fa-comments-dollar"></i> <?php  echo $row["price"]; ?>
+					        				<i class="fas fa-comments-dollar"></i> $<?php  echo $row1["price"]; ?>
 					        			</div>
 					        			<div class="col-6 text-center py-2 my-1" id="modal-overview-item">
-					        				<i class="fas fa-hashtag"></i> ID: <?php  echo $row["ID"]; ?>
+					        				<i class="fas fa-hashtag"></i> ID: <?php  echo $row1["ID"]; ?>
 					        			</div>
 					        			<div class="col-4 text-center py-2 my-1" id="modal-overview-item">
-					        				<i class="fas fa-bed"></i> <?php  echo $row["rooms"]; ?> Cuartos
+					        				<i class="fas fa-bed"></i> <?php  echo $row1["rooms"]; ?> Cuartos
 					        			</div>
 					        			<div class="col-4 text-center py-2 my-1" id="modal-overview-item">
-					        				<i class="fas fa-bath"></i> <?php  echo $row["baths"]; ?> Baños
+					        				<i class="fas fa-bath"></i> <?php  echo $row1["baths"]; ?> Baños
 					        			</div>
 					        			<div class="col-4 text-center py-2 my-1" id="modal-overview-item">
-					        				<i class="fas fa-car"></i> <?php  echo $row["parking"]; ?> Parqueos
+					        				<i class="fas fa-car"></i> <?php  echo $row1["parking"]; ?> Parqueos
 					        			</div>
 				        			<?php  
 											};
