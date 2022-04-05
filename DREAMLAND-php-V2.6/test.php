@@ -18,7 +18,6 @@ if (!$entrada) {
 $consulta = "SELECT ID, name, location_name, price, rooms, baths, parking, description FROM property";
 $resultado = $entrada -> query($consulta);
 
-
 ?>
 <!-- LIST AREA -->
 	<section id="listing-property-section">
@@ -48,15 +47,15 @@ $resultado = $entrada -> query($consulta);
 										</div>
 										<div class="row details">
 											<div class="col-4 detail-item" id="list-border">
-												<p><?php echo $row["rooms"]; ?> Cuartos</p>
+												<p><i class="fas fa-bed"></i> <?php echo $row["rooms"]; ?></p>
 											</div>
 
 											<div class="col-4 detail-item" id="list-border">
-												<p><?php echo $row["baths"]; ?> Baños</p>
+												<p><i class="fas fa-bath"></i> <?php echo $row["baths"]; ?></p>
 											</div>
 
 											<div class="col-4 detail-item" id="list-border">
-												<p><?php echo $row["parking"]; ?> Parqueos</p>
+												<p><i class="fas fa-car"></i> <?php echo $row["parking"]; ?></p>
 											</div>
 										</div>	
 									</div>
@@ -64,7 +63,7 @@ $resultado = $entrada -> query($consulta);
 									<div class="card-description text-justify">
 										<p> <?php echo $row["description"]; ?></p>
 									</div>
-									<button type="button" class="btn btn-primary boton" data-bs-toggle="modal" data-bs-target="#listing_modal" value="<?php echo $row["ID"]; ?>">Show More</button>
+									<button type="button" class="btn btn-primary" id="boton" onclick="reply(this.value)" data-bs-toggle="modal" data-bs-target="#listing_modal" value="<?php echo $row["ID"]; ?>">Show More</button>
 								</div>
 							</div>
 						
@@ -82,15 +81,10 @@ $resultado = $entrada -> query($consulta);
 		  	<div class="modal-dialog modal-xl">
 		    	<div class="modal-content">
 			      	<div class="modal-header">
-			      		<?php  
-			      			$consulta2 = "SELECT ID, name, location_name, price, rooms, baths, parking FROM property WHERE ID ='DLCR-002'";
-							$resultado2 = mysqli_query($entrada, $consulta2);
-										if (mysqli_num_rows($resultado2) > 0) {
-											while ($row1 = $resultado2 ->fetch_assoc()) {
-						?>
-			        	<h4 class="modal-title" id="listing-name-label"><?php echo $row1["ID"] ?></h4>
+			        	<h4 class="modal-title" id="listing-name-label"><?php echo $val ?></h4>
 			        	<i class="fas fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
 			      	</div>
+
 
 			      	<div class="modal-body" id="listing-modal-body">
 			      		<div class="modal-carousel">
@@ -121,7 +115,13 @@ $resultado = $entrada -> query($consulta);
 								  </a>
 							</div>
 			      		</div>
-			        	
+
+			        	<?php  
+			      			$consulta2 = "SELECT ID, name, location_name, price, rooms, baths, parking FROM property WHERE ID ='DLCR-002'";
+							$resultado2 = mysqli_query($entrada, $consulta2);
+										if (mysqli_num_rows($resultado2) > 0) {
+											while ($row1 = $resultado2 ->fetch_assoc()) {
+						?>
 			        	
 			        	<div class="modal-description text-center pt-3">
 			        		<div class="container">
@@ -200,5 +200,6 @@ $resultado = $entrada -> query($consulta);
 		</div>	
 	</section>
 <?php
+
 include 'footer.php';
 ?>
