@@ -10,6 +10,13 @@
     		$(this).find('.btn').toggleClass('btn-default');
        	});
 
+
+       	function reply(id){
+       		var num = id;
+       		console.log(id);
+       		return num;
+       	}
+
 		// SWIPER SLIDER
        	var mySwiper = new Swiper('.swiper-container', {
   			// Optional parameters
