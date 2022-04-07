@@ -29,6 +29,8 @@ $resultado = $entrada -> query($consulta);
 			
 			<div class="listing row text-center">
 				<?php  
+
+				// investigar https://www.codexworld.com/bootstrap-modal-dynamic-content-jquery-ajax-php-mysql/
 				if (mysqli_num_rows($resultado) > 0) {
 
 					while ($row = $resultado ->fetch_assoc()) {
@@ -63,25 +65,23 @@ $resultado = $entrada -> query($consulta);
 									<div class="card-description text-justify">
 										<p> <?php echo $row["description"]; ?></p>
 									</div>
-									<button type="button" class="btn btn-primary" id="boton" onclick="reply(this.value)" data-bs-toggle="modal" data-bs-target="#listing_modal" value="<?php echo $row["ID"]; ?>">Show More</button>
+									
+									<button type="button" class="btn btn-primary" id="btn-modal-<?php echo $row["ID"]; ?>" onclick="" data-bs-toggle="modal" data-bs-target="#listing_modal<?php echo $row["ID"]; ?>">Show More</button>
+									
 								</div>
 							</div>
 						
-					<?php  
-					};
-				};
-				?>
+					
 			</div>
 		</div>
 	</section>
 
 	<section id="property-modal">
-		<div class="modal fade" id="listing_modal" tabindex="-1" aria-labelledby="listing-name-label" aria-hidden="true">
-
+		<div class="modal fade" id="listing_modal<?php echo $row["ID"]; ?>" tabindex="-1" aria-labelledby="listing-name-label" aria-hidden="true">
 		  	<div class="modal-dialog modal-xl">
 		    	<div class="modal-content">
 			      	<div class="modal-header">
-			        	<h4 class="modal-title" id="listing-name-label"><?php echo $val ?></h4>
+			        	<h4 class="modal-title" id="listing-name-label"><?php echo $row["ID"]; ?></h4>
 			        	<i class="fas fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
 			      	</div>
 
@@ -116,8 +116,11 @@ $resultado = $entrada -> query($consulta);
 							</div>
 			      		</div>
 
+
 			        	<?php  
-			      			$consulta2 = "SELECT ID, name, location_name, price, rooms, baths, parking FROM property WHERE ID ='DLCR-002'";
+			        		
+
+			      			$consulta2 = "SELECT ID, name, location_name, price, rooms, baths, parking FROM property WHERE ID = '" . $id_prop ."'";
 							$resultado2 = mysqli_query($entrada, $consulta2);
 										if (mysqli_num_rows($resultado2) > 0) {
 											while ($row1 = $resultado2 ->fetch_assoc()) {
@@ -199,6 +202,8 @@ $resultado = $entrada -> query($consulta);
 			</div>
 		</div>	
 	</section>
+
+
 <?php
 
 include 'footer.php';
