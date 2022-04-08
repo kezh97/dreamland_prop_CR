@@ -15,7 +15,7 @@ if (!$entrada) {
 
 
 //REQUEST
-$consulta = "SELECT ID, name, location_name, price, rooms, baths, parking, description FROM property";
+$consulta = "SELECT id, name, location_name, price, rooms, baths, parking, description FROM property";
 $resultado = $entrada -> query($consulta);
 
 ?>
@@ -28,60 +28,18 @@ $resultado = $entrada -> query($consulta);
 			</div>
 			
 			<div class="listing row text-center">
-				<?php  
-
-				// investigar https://www.codexworld.com/bootstrap-modal-dynamic-content-jquery-ajax-php-mysql/
-				if (mysqli_num_rows($resultado) > 0) {
-
-					while ($row = $resultado ->fetch_assoc()) {
-						?>
-							<div class="col-lg-4 col-md-6 col-sm-12 p-1 item-card-outer">
-								<div class="p-3 item-card-inner" id="list-border">
-									<div class="mt-1 my-1 card-img">
-										<img src="img/house7.webp" alt="">
-									</div>
-
-									<div class="card-details">
-										<div class="location-name">
-											<h5><?php  echo $row["name"]; ?></h5>
-											<p><?php  echo $row["location_name"];?></p>
-											<hr class="w-75 mx-auto">
-										</div>
-										<div class="row details">
-											<div class="col-4 detail-item" id="list-border">
-												<p><i class="fas fa-bed"></i> <?php echo $row["rooms"]; ?></p>
-											</div>
-
-											<div class="col-4 detail-item" id="list-border">
-												<p><i class="fas fa-bath"></i> <?php echo $row["baths"]; ?></p>
-											</div>
-
-											<div class="col-4 detail-item" id="list-border">
-												<p><i class="fas fa-car"></i> <?php echo $row["parking"]; ?></p>
-											</div>
-										</div>	
-									</div>
-
-									<div class="card-description text-justify">
-										<p> <?php echo $row["description"]; ?></p>
-									</div>
-									
-									<button type="button" class="btn btn-primary" id="btn-modal-<?php echo $row["ID"]; ?>" onclick="" data-bs-toggle="modal" data-bs-target="#listing_modal<?php echo $row["ID"]; ?>">Show More</button>
-									
-								</div>
-							</div>
-						
+				<?php include 'outer-card.php' ?>
 					
 			</div>
 		</div>
 	</section>
 
 	<section id="property-modal">
-		<div class="modal fade" id="listing_modal<?php echo $row["ID"]; ?>" tabindex="-1" aria-labelledby="listing-name-label" aria-hidden="true">
+		<div class="modal fade" id="listing_modal<?php echo $row["id"]; ?>" tabindex="-1" aria-labelledby="listing-name-label" aria-hidden="true">
 		  	<div class="modal-dialog modal-xl">
 		    	<div class="modal-content">
 			      	<div class="modal-header">
-			        	<h4 class="modal-title" id="listing-name-label"><?php echo $row["ID"]; ?></h4>
+			        	<h4 class="modal-title" id="listing-name-label"><?php echo $row["id"]; ?></h4>
 			        	<i class="fas fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
 			      	</div>
 
@@ -120,7 +78,7 @@ $resultado = $entrada -> query($consulta);
 			        	<?php  
 			        		
 
-			      			$consulta2 = "SELECT ID, name, location_name, price, rooms, baths, parking FROM property WHERE ID = '" . $id_prop ."'";
+			      			$consulta2 = "SELECT id, name, location_name, price, rooms, baths, parking FROM property WHERE ID = '" . $id_prop ."'";
 							$resultado2 = mysqli_query($entrada, $consulta2);
 										if (mysqli_num_rows($resultado2) > 0) {
 											while ($row1 = $resultado2 ->fetch_assoc()) {
@@ -143,7 +101,7 @@ $resultado = $entrada -> query($consulta);
 					        				<i class="fas fa-comments-dollar"></i> $<?php  echo $row1["price"]; ?>
 					        			</div>
 					        			<div class="col-6 text-center py-2 my-1" id="modal-overview-item">
-					        				<i class="fas fa-hashtag"></i> ID: <?php  echo $row1["ID"]; ?>
+					        				<i class="fas fa-hashtag"></i> ID: <?php  echo $row1["id"]; ?>
 					        			</div>
 					        			<div class="col-4 text-center py-2 my-1" id="modal-overview-item">
 					        				<i class="fas fa-bed"></i> <?php  echo $row1["rooms"]; ?> Cuartos
@@ -154,13 +112,14 @@ $resultado = $entrada -> query($consulta);
 					        			<div class="col-4 text-center py-2 my-1" id="modal-overview-item">
 					        				<i class="fas fa-car"></i> <?php  echo $row1["parking"]; ?> Parqueos
 					        			</div>
-				        			<?php  
-											};
-										};
-									?>
+				        			
 				        		</div>
 			        		</div>
 			        	</div>
+			        	<?php  
+											};
+										};
+						?>
 
 			        	<div class="modal-table pt-3">
 			        		<div class="container">
@@ -202,6 +161,7 @@ $resultado = $entrada -> query($consulta);
 			</div>
 		</div>	
 	</section>
+
 
 
 <?php
