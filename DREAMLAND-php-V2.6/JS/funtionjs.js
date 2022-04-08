@@ -1,3 +1,10 @@
+$(document).ready(function(){
+       		$('.boton').click(function(){
+       			var usid = $(this).data('id');
+       			console.log(usid);
+
+       		});
+       	});
 
 // LANGUAGE TOGGLE SWITCHER
 		$('.btn-toggle').click(function() {
@@ -9,13 +16,6 @@
     
     		$(this).find('.btn').toggleClass('btn-default');
        	});
-
-
-       	function reply(id){
-       		var num = id;
-       		console.log(id);
-       		return num;
-       	}
 
 		// SWIPER SLIDER
        	var mySwiper = new Swiper('.swiper-container', {
