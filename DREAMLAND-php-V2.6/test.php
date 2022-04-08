@@ -35,7 +35,7 @@ $resultado = $entrada -> query($consulta);
 	</section>
 
 	<section id="property-modal">
-		<div class="modal fade" id="listing_modal<?php echo $row["id"]; ?>" tabindex="-1" aria-labelledby="listing-name-label" aria-hidden="true">
+		<div class="modal fade" id="listing_modal" tabindex="-1" aria-labelledby="listing-name-label" aria-hidden="true">
 		  	<div class="modal-dialog modal-xl">
 		    	<div class="modal-content">
 			      	<div class="modal-header">
