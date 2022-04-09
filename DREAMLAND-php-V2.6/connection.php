@@ -1,15 +1,13 @@
 <?php 
 
-function connect_db(){
-	$user = "root@localhost";
-	$pass = "";
-	$server = "127.0.0.1";
-	$db = "test";
+$user = "root@localhost";
+$pass = "";
+$server = "127.0.0.1";
+$db = "test";
 
-	$enlace = mysqli_connect($server, $user, $pass) or die("Error al intentar conectar a la base de datos.");
-	mysqlI_select_db($enlace, $db);
-
-	return $enlace;
+$conn = new mysqli($server, $user, $pass, $db);
+if ($conn->connect_error) {
+	die('Error: (' . $conn->connect_errno .')' . $conn->connect_error);
 }
 
- ?>
+?>
