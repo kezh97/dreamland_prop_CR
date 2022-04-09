@@ -10,6 +10,7 @@ if (!$conn) {
 }
 
 ?>
+
 <!-- LIST AREA -->
 	<section id="listing-property-section">
 		<div class="container py-5 text-center">
@@ -19,7 +20,7 @@ if (!$conn) {
 			</div>
 			
 			<div class="listing row text-center">
-				<?php include 'outer-card.php' ?>		
+				<?php include 'card.php' ?>		
 			</div>
 		</div>
 	</section>
@@ -27,26 +28,10 @@ if (!$conn) {
 	<section id="property-modal">
 		<div class="modal fade" id="listing_modal" tabindex="-1" aria-labelledby="listing-name-label" aria-hidden="true">
 		  	<div class="modal-dialog modal-xl">
-		    	<div class="modal-content">
-			      	<div class="modal-header">
-			        	<h4 class="modal-title" id="listing-name-label"><?php echo $row["id"]; ?></h4>
-			        	<i class="fas fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
-			      	</div>
-
-
-			      	<div class="modal-body" id="listing-modal-body">
-			      			
-		      		</div>
-
-			      	<div class="modal-footer">
-			        	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-			      	</div> 	
-			    </div>
+		    	<div class="modal-content"></div>
 			</div>
 		</div>	
 	</section>
-
-
 
 <?php
 
