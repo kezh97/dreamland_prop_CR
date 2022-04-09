@@ -1,7 +1,15 @@
 $(document).ready(function(){
        		$('.boton').click(function(){
-       			var usid = $(this).data('id');
-       			console.log(usid);
+       			var userid = $(this).data('id');
+       			$.ajax({
+       				url:'ajax-listing-prop.php',
+       				type: 'post',
+       				data: {userid: userid},
+       				success: function(response){
+       					$('.modal-body').html(response);
+       					$('#listing_modal').modal('show');
+       				}
+       			});
 
        		});
        	});
