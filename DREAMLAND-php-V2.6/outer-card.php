@@ -1,5 +1,9 @@
 <?php  
 
+//REQUEST
+$consulta = "SELECT id, name, location_name, price, rooms, baths, parking, description FROM property";
+$resultado = $conn -> query($consulta);
+
 // investigar https://www.codexworld.com/bootstrap-modal-dynamic-content-jquery-ajax-php-mysql/
 if (mysqli_num_rows($resultado) > 0) {
 	while ($row =  mysqli_fetch_array($resultado)) {
