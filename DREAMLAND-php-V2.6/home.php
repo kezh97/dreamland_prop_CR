@@ -1,5 +1,4 @@
-<?php echo 
-'<!-- CAROUSEL -->	
+<!-- CAROUSEL -->	
 	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
     		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -10,7 +9,7 @@
     		<div class="carousel-item active">
       			<img class="" src="img/city.webp" alt="First slide">
       			<div class="carousel-caption home-caption">
-    				<h5>Dreamland Properties CR</h5>
+    				<h5>Dreamland CR</h5>
     				<p>Your best choice to find your dreamhouse</p>
   				</div>
     		</div>
@@ -53,7 +52,7 @@
 				<h3>Best Treatment</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
 			</div>
-			<div class="col-md text-center m-2 pt-5 pb-2 services-show">
+			<div class="col-md text-center m-4 pt-5 pb-2 services-show">
 				<img loading="lazy" src="img/realestate.webp" alt="realtor" width="180" height="180">
 				<h3>You ask it, we find it for you</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
@@ -80,6 +79,7 @@
 		<div class="mt-5 text-center">
 			<img loading="lazy" class="img-fluid" src="img/house1.webp" alt="house">
 		</div>
-	</section';
+	</section>
+<?php
 	include 'swiper.php'; 
 ?>
