@@ -13,14 +13,14 @@ if (!$conn) {
 
 <!-- LIST AREA -->
 	<section id="listing-property-section">
-		<div class="container py-5 text-center">
+		<div class="container-fluid py-5 px-4 text-center">
 			<div class="listing-title pt-2 pb-5">
 				<p class="h1">Lista de propiedades</p>
 				<hr>
 			</div>
 			
 			<div class="listing row text-center">
-				<?php include 'card.php' ?>		
+				<?php include 'card.php'; ?>
 			</div>
 		</div>
 	</section>
