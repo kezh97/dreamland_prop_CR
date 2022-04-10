@@ -1,12 +1,11 @@
 <?php  
 
 //REQUEST
-$consulta = "SELECT id, name, location_name, price, rooms, baths, parking, description FROM property";
-$resultado = $conn -> query($consulta);
+$query = "SELECT id, name, location_name, price, rooms, baths, parking, description FROM property";
+$result_general = $conn -> query($query);
 
-// investigar https://www.codexworld.com/bootstrap-modal-dynamic-content-jquery-ajax-php-mysql/
-if (mysqli_num_rows($resultado) > 0) {
-	while ($row =  mysqli_fetch_array($resultado)) {
+if (mysqli_num_rows($result_general) > 0) {
+	while ($row =  mysqli_fetch_array($result_general)) {
 ?>
 		<div class="col-lg-4 col-md-6 col-sm-12 p-1 item-card-outer">
 			<div class="p-3 item-card-inner" id="list-border">
