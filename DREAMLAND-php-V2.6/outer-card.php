@@ -15,7 +15,7 @@ if (mysqli_num_rows($result_general) > 0) {
 
 				<div class="card-details">
 					<div class="location-name">
-						<h5><?php  echo $row["name"]; ?>, <?php echo $row["id"]; ?></h5>
+						<h5>DLCR-<?php echo $row["id"] .': '. $row["name"]; ?> </h5>
 						<p><?php  echo $row["location_name"];?></p>
 						<hr class="w-75 mx-auto">
 					</div>
