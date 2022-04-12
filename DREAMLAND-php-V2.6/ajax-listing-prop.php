@@ -44,6 +44,39 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 			</div>
 		</div>
 
+		<div class="row py-5 px-3">
+			<div class="modal-description text-center col-lg-6 ">
+				
+					<h3>Descripción principal</h3>
+					<p class="text-justify">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Id eaque dolorum ipsum aspernatur, asperiores dolores officia nisi cupiditate, voluptatibus excepturi quia ut velit. Sint libero labore ipsam neque incidunt ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint repellat corrupti, ex nesciunt omnis impedit commodi quibusdam sunt laborum, vitae voluptates. Sed voluptas, aut dolorem repellat deserunt! Ea, modi maiores?</p>
+				
+			</div>
+
+			<div class="modal-overview col-lg-6">
+			
+				<h4 class="h4 ">Overview</h4>
+				<hr>
+				<div class="">
+		    			<div class="text-center py-2 my-1" id="modal-overview-item">
+		    				<i class="fas fa-comments-dollar"></i> $<?php  echo $row["price"]; ?>
+		    			</div>
+		    			<div class="text-center py-2 my-1" id="modal-overview-item">
+		    				<i class="fas fa-hashtag"></i> ID: DLCR-<?php  echo $row["id"]; ?>
+		    			</div>
+		    			<div class="text-center py-2 my-1" id="modal-overview-item">
+		    				<i class="fas fa-bed"></i> <?php  echo $row["rooms"]; ?> Cuartos
+		    			</div>
+		    			<div class="text-center py-2 my-1" id="modal-overview-item">
+		    				<i class="fas fa-bath"></i> <?php  echo $row["baths"]; ?> Baños
+		    			</div>
+		    			<div class="text-center py-2 my-1" id="modal-overview-item">
+		    				<i class="fas fa-car"></i> <?php  echo $row["parking"]; ?> Parqueos
+		    			</div>
+				</div>
+			
+			</div>
+		</div>
+
 		<div class="modal-description text-center pt-3">
 			<div class="container">
 				<h3>Descripción principal</h3>
