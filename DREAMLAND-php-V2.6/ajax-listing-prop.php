@@ -1,16 +1,16 @@
 <?php 
 include 'connection.php';
 
-$userid = $_POST['userid'];
+$id = $_POST['prop_id'];
 $dir = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15695.330747442886!2d-84.00539163079384!3d10.434848233776973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa099734387841d%3A0xa5d62bb729a851df!2sBarrio%20Flaminia%2C%20Heredia%2C%20Sarapiqu%C3%AD!5e0!3m2!1ses!2scr!4v1646257878309!5m2!1ses!2scr';
 
-$query_by_id = "SELECT * FROM property WHERE id=" .$userid;
+$query_by_id = "SELECT * FROM property WHERE property_id=" .$id;
 $result_query_by_id = mysqli_query($conn, $query_by_id);
 while ($row = mysqli_fetch_array($result_query_by_id)) {
 	?>
 
 	<div class="modal-header">
-		<h4 class="modal-title" id="listing-name-label">DLCR-<?php echo $row["id"].': '. $row["name"] . ', '. $row["location_name"]; ?></h4>
+		<h4 class="modal-title" id="listing-name-label">DLCR-<?php echo $row["property_id"].': '. $row["name"] . ', '. $row["location_name"]; ?></h4>
 		<i class="fas fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
 	</div>
 
@@ -61,7 +61,7 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 		    				<i class="fas fa-comments-dollar"></i> $<?php  echo $row["price"]; ?>
 		    			</div>
 		    			<div class="text-center py-2 my-1" id="modal-overview-item">
-		    				<i class="fas fa-hashtag"></i> ID: DLCR-<?php  echo $row["id"]; ?>
+		    				<i class="fas fa-hashtag"></i> ID: DLCR-<?php  echo $row["property_id"]; ?>
 		    			</div>
 		    			<div class="text-center py-2 my-1" id="modal-overview-item">
 		    				<i class="fas fa-bed"></i> <?php  echo $row["rooms"]; ?> Cuartos
@@ -93,7 +93,7 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 		    				<i class="fas fa-comments-dollar"></i> $<?php  echo $row["price"]; ?>
 		    			</div>
 		    			<div class="col-6 text-center py-2 my-1" id="modal-overview-item">
-		    				<i class="fas fa-hashtag"></i> ID: DLCR-<?php  echo $row["id"]; ?>
+		    				<i class="fas fa-hashtag"></i> ID: DLCR-<?php  echo $row["property_id"]; ?>
 		    			</div>
 		    			<div class="col-4 text-center py-2 my-1" id="modal-overview-item">
 		    				<i class="fas fa-bed"></i> <?php  echo $row["rooms"]; ?> Cuartos
