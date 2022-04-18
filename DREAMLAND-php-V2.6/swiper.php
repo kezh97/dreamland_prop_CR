@@ -2,7 +2,7 @@
 
 include 'connection.php';
 
-$query = "SELECT id, name, location_name, price, rooms, baths, parking, description FROM property";
+$query = "SELECT property_id, name, location_name, price, rooms, baths, parking, description FROM property";
 $result_general = $conn -> query($query);
 
 ?>
