@@ -1,7 +1,7 @@
 <?php  
 
 //REQUEST
-$query = "SELECT id, name, location_name, price, rooms, baths, parking, description FROM property";
+$query = "SELECT property_id, name, location_name, price, rooms, baths, parking, description FROM property";
 $result_general = $conn -> query($query);
 
 if (mysqli_num_rows($result_general) > 0) {
@@ -15,7 +15,7 @@ if (mysqli_num_rows($result_general) > 0) {
 
 				<div class="card-details">
 					<div class="location-name">
-						<h5>DLCR-<?php echo $row["id"] .': '. $row["name"]; ?> </h5>
+						<h5>DLCR-<?php echo $row["property_id"] .': '. $row["name"]; ?> </h5>
 						<p><?php  echo $row["location_name"];?></p>
 						<hr class="w-75 mx-auto">
 					</div>
@@ -38,7 +38,7 @@ if (mysqli_num_rows($result_general) > 0) {
 					<p> <?php echo $row["description"]; ?></p>
 				</div>
 				
-				<button type="button" data-id="<?php echo $row['id']; ?>" class="boton btn btn-primary" data-bs-toggle="modal" data-bs-target="#listing_modal">Show More</button>
+				<button type="button" data-id="<?php echo $row['property_id']; ?>" class="boton btn btn-primary" data-bs-toggle="modal" data-bs-target="#listing_modal">Show More</button>
 				
 			</div>
 		</div>
