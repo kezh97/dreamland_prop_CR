@@ -1,12 +1,12 @@
 $(document).ready(function(){
        		$('.boton').click(function(){
-       			var userid = $(this).data('id');
+       			var received_id = $(this).data('id');
        			$.ajax({
        				url:'ajax-listing-prop.php',
        				type: 'post',
-       				data: {userid: userid},
+       				data: {prop_id: received_id},
        				success: function(response){
-       					$('.modal-body').html(response);
+       					$('.modal-content').html(response);
        					$('#listing_modal').modal('show');
        				}
        			});
