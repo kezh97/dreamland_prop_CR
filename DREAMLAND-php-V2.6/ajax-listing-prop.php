@@ -6,6 +6,11 @@ $dir = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15695.330747442886
 
 $query_by_id = "SELECT * FROM property WHERE property_id=" .$id;
 $result_query_by_id = mysqli_query($conn, $query_by_id);
+
+$query_by_img = "SELECT img_path FROM img_repository WHERE property_id =" . $id;
+$result_query_by_img = mysqli_query($conn, $query_by_img);
+$cont = 0;
+
 while ($row = mysqli_fetch_array($result_query_by_id)) {
 	?>
 
@@ -18,20 +23,37 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 	 	<div class="modal-carousel">
 			<div id="carousel-ind" class="carousel slide" data-ride="carousel">
 			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-ind" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-ind" data-slide-to="1"></li>
-			    <li data-target="#carousel-ind" data-slide-to="2"></li>
+			    <?php 
+			    $i = 0;
+			    foreach ($result_query_by_img as $var1) {
+			    	if ($i  == 0) {
+			    		echo '<li data-target="#carousel-ind" data-slide-to="' . $i +1 .'" class="active"></li>';
+			    	} else{
+			    		echo '<li data-target="#carousel-ind" data-slide-to="' . $i +1 .'" class=""></li>';
+			    	}
+			    	$i = $i+1;
+			    }
+			     ?>
 			  </ol>
 			  <div class="carousel-inner" >
-			    <div class="carousel-item list-carousel active">
-			      <img src="img/house1.webp" class="" alt="">
-			    </div>
-			    <div class="carousel-item list-carousel">
-			      <img src="img/house7.webp" class="" alt="">
-			    </div>
-			    <div class="carousel-item list-carousel">
-			      <img src="img/house3.webp" class="" alt="">
-			    </div>
+			    <?php 
+			    	while ($row1 = mysqli_fetch_array($result_query_by_img)) {
+						if ($cont == 0) {
+							?>
+							<div class="carousel-item list-carousel active">
+			      				<img src=" <?php echo $row1['img_path']; ?>" class="" alt="">
+			    			</div>
+			    		<?php
+						} else{
+						?>
+							<div class="carousel-item list-carousel">
+			      				<img src="<?php echo $row1['img_path']; ?>" class="" alt="">
+			    			</div>'
+			    		<?php
+						}
+						$cont = $cont+1;
+					}
+			     ?>
 			  </div>
 			  <a class="carousel-control-prev" href="#carousel-ind" role="button" data-slide="prev">
 			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
