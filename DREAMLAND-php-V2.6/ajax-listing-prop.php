@@ -40,7 +40,7 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 			  		}	
 			  	?>
 					<div class="carousel-item list-carousel <?= $act ?>">
-			      		<img src="<?= $row['img_path']  ?>" class="" alt="">
+			      		<img src="<?= $row['img_path']  ?>" class="w-100 h-100" alt="">
 			    	</div>	
 			    <?php $cont++; } ?>
 			  	</div>
