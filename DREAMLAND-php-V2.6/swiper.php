@@ -2,8 +2,9 @@
 
 include 'connection.php';
 
-$query = "SELECT property_id, name, location_name, price, rooms, baths, parking, description FROM property";
-$result_general = $conn -> query($query);
+$query_join = "SELECT s1.property_id, s1.name, s1.location_name, s1.rooms, s1.baths, s1.description, s1.price, s1.parking, s2.img_path FROM `property` AS s1 JOIN img_repository AS s2 on s1.property_id = s2.property_id WHERE img_repo_id = 1";
+
+$result_general = $conn -> query($query_join);
 
 ?>
 
@@ -29,10 +30,10 @@ $result_general = $conn -> query($query);
 					<div class="swiper-slide">
 						<div class="property-list">
 							<div class="image">
-								<img loading="lazy" src="img/house1.webp" alt="">
+								<img loading="lazy" src="<?php echo $row["img_path"]; ?>" alt="">
 							</div>
 							<div class="text-right">
-								<h4 class="h5">DLCR-<?php echo $row["id"]; ?>: <?php echo $row["name"] .', '. $row["location_name"]; ?></h4>
+								<h4 class="h5">DLCR-<?php echo $row["property_id"]; ?>: <?php echo $row["name"] .', '. $row["location_name"]; ?></h4>
 							</div>
 							<div class="d-flex justify-content-between mb-4">
 								<div class="item py-3">
@@ -62,6 +63,4 @@ $result_general = $conn -> query($query);
 			</div>
 		</div>
 	</div>
-</section>
-
-
+</section> 
