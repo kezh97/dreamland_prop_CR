@@ -32,10 +32,11 @@ $result_general = $conn -> query($query_join);
 							<div class="image">
 								<img loading="lazy" src="<?php echo $row["img_path"]; ?>" alt="">
 							</div>
-							<div class="text-right">
-								<h4 class="h5">DLCR-<?php echo $row["property_id"]; ?>: <?php echo $row["name"] .', '. $row["location_name"]; ?></h4>
+							<div class="text-left px-2">
+								<h4 class="">DLCR-<?php echo $row["property_id"]; ?>: <?php echo $row["name"] ?></h4>
+								<h5><?php  echo $row["location_name"]; ?></h5>
 							</div>
-							<div class="d-flex justify-content-between mb-4">
+							<div class="d-flex justify-content-between mb-4 px-2">
 								<div class="item py-3">
 									<h4 class="h5 m-0 location-name"></h4>
 									<p class="m-0 location-name">$<?php echo $row["price"]; ?></p>
@@ -51,8 +52,6 @@ $result_general = $conn -> query($query_join);
 									2"><?php echo $row["parking"]; ?></span> 
 								</div>
 							</div>
-
-							<button type="button" class="btn btn-primary">Preview</button>
 						</div>
 					</div>
 					<?php 
