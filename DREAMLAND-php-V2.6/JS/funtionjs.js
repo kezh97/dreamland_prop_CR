@@ -1,3 +1,12 @@
+// NAV SELECTOR
+jQuery(function($){
+    $('.menu ul li a').filter(function() {
+    var locationUrl = window.location.href;
+    var currentItemUrl = $(this).prop('href');
+
+    return currentItemUrl === locationUrl;
+    }).parent('li').addClass('active');
+});
 
 // LANGUAGE TOGGLE SWITCHER
 $('.btn-toggle').click(function() {
@@ -11,32 +20,22 @@ $('.btn-toggle').click(function() {
 	});
 
 // SWIPER SLIDER
-	var mySwiper = new Swiper('.swiper-container', {
-		// Optional parameters
-		loop: true,
-		freeMode: true,
-		centeredSlides: true,
-		breakpoints: {
-			299: {
-				slidesPerView: 1,
-				spaceBetween: 40
-			},
+var mySwiper = new Swiper('.swiper-container', {
+	// Optional parameters
+	loop: true,
+	freeMode: true,
+	centeredSlides: true,
+	breakpoints: {
+		299: {
+			slidesPerView: 1,
+			spaceBetween: 40
+		},
 
-			999: {
-				slidesPerView: 3,
-				spaceBetween: 30
-			}
+		999: {
+			slidesPerView: 3,
+			spaceBetween: 30
 		}
-});
-
-// NAV SELECTOR
-jQuery(function($){
-    $('.menu ul li a').filter(function() {
-    var locationUrl = window.location.href;
-    var currentItemUrl = $(this).prop('href');
-
-    return currentItemUrl === locationUrl;
-    }).parent('li').addClass('active');
+	}
 });
 
 // MODAL ID SELECTOR
