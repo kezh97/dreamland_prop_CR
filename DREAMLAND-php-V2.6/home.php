@@ -6,21 +6,21 @@
     		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   		</ol>
   		<div class="carousel-inner" id="carousel-home">
-    		<div class="carousel-item active">
+    		<div class="carousel-item active" id="carousel_item_home">
       			<img class="" src="img/city.webp" alt="First slide">
       			<div class="carousel-caption home-caption">
     				<h5>Dreamland CR</h5>
     				<p>Your best choice to find your dreamhouse</p>
   				</div>
     		</div>
-    		<div class="carousel-item">
+    		<div class="carousel-item" id="carousel_item_home">
       			<img class="" src="img/house7.webp" alt="Second slide">
       			<div class="carousel-caption home-caption">
     				<h5>Contact us!</h5>
     				<p>Meet our best realtor.</p>
   				</div>
     		</div>
-    		<div class="carousel-item">
+    		<div class="carousel-item" id="carousel_item_home">
       			<img class="" src="img/tour.webp" alt="Third slide">
       			<div class="carousel-caption home-caption">
     				<h5>Explore Costa Ricas natural paradise</h5>
@@ -66,7 +66,7 @@
 	</section>
 
 	<!-- PARALLAX SEPARATOR --> 
-  	<section class="para mt-5">
+  	<section class="mt-5">
     	<div class="parallax-sep"></div>
   	</section>
 
