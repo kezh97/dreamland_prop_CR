@@ -1,8 +1,12 @@
+<?php 
+	$activePage = basename($_SERVER['PHP_SELF'], ".php");
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="img/logo1.webp">
 	<title>Dreamland Properties CR</title>
 
 	<!-- FONTS&ICONS -->
@@ -29,20 +33,20 @@
 
   		<div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
     		<ul class="navbar-nav ml-auto">
-      			<li class="nav-item">
-        			<a class="nav-link pr-5 text-uppercase" href="index.php">Home</span></a>
+      			<li class="nav-item <?= ($activePage == 'index') ? 'active':''; ?>">
+        			<a class="nav-link pr-5 text-uppercase font-weight-normal" href="index.php">Home</span></a>
       			</li>
-      			<li class="nav-item">
-        			<a class="nav-link pr-5 text-uppercase" href="list-properties.php">Properties</a>
+      			<li class="nav-item <?= ($activePage == 'list_properties') ? 'active':''; ?>">
+        			<a class="nav-link pr-5 text-uppercase font-weight-normal" href="list_properties.php" >Properties</a>
       			</li>
-      			<li class="nav-item">
-        			<a class="nav-link pr-5 text-uppercase" href="tours.php">Tours</a>
+      			<li class="nav-item <?= ($activePage == 'tours') ? 'active':''; ?>">
+        			<a class="nav-link pr-5 text-uppercase font-weight-normal" href="tours.php">Tours</a>
       			</li>
-      			<li class="nav-item">
-        			<a class="nav-link pr-5 text-uppercase" href="contact.php">Contact</a>
+      			<li class="nav-item <?= ($activePage == 'contact') ? 'active':''; ?>">
+        			<a class="nav-link pr-5 text-uppercase font-weight-normal" href="contact.php" >Contact</a>
       			</li>
-      			<li class="nav-item">
-        			<a class="nav-link pr-5 text-uppercase" href="test.php">tester</a>
+      			<li class="nav-item <?= ($activePage == 'test') ? 'active':''; ?>">
+        			<a class="nav-link pr-5 text-uppercase font-weight-normal" href="test.php">tester</a>
       			</li>
       			<div class="btn-group btn-toggle"> 
     				<button class="btn btn-default">ES</button>
