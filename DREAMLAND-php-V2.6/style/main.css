@@ -5,7 +5,7 @@
 
 /* NAVEGATION */
 nav{
-	box-shadow: 0 2px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
 
 .brand{
@@ -52,8 +52,8 @@ nav{
 	-webkit-text-fill-color: transparent;
 }
 
-.services-show{
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+.services-show img{
+	object-fit: cover;
 }
 
 /* PARALLAX SEPARATOR*/ 
