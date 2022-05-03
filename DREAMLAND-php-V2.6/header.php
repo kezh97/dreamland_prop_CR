@@ -7,25 +7,28 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="img/logo1.webp">
-	<title>Dreamland Properties CR</title>
+	<title>Dreamland Costa Rica</title>
 
+	<!-- PERSONALIZE CSS STYLES -->
+	<link rel="stylesheet" href="style/main.css">
+	<!-- GOOGLE FONTS API -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
 	<!-- FONTS&ICONS -->
 	<script src="https://kit.fontawesome.com/5770ce2232.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-	<!-- STYLES -->
-	<link rel="stylesheet" href="style/main.css">
 	<!-- SWIPERJS -->
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 	<!-- Bootstrap core CSS -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-	<!-- PERSONALIZE JS -->
 	
 </head>
 <body>
 	<!-- NAVBAR -->	
 	<nav class="navbar navbar-expand-lg py-2 navbar-light bg-light">
   		<a class="navbar-brand" href="index.php"> 
-  		 	<span class="fs-5 fw-bold text-uppercase brand">Dreamland Properties CR.</span>
+  		 	<span class="fs-5 fw-bold text-uppercase brand">Dreamland Costa Rica</span>
   		</a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     		<span class="navbar-toggler-icon"></span>
