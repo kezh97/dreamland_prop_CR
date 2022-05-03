@@ -48,18 +48,18 @@
 	<section class="container py-4">
 		<div class="row">
 			<div class="col-md text-center m-2 pt-5 pb-2 services-show">
-				<img loading="lazy" src="img/realtor.webp" alt="realtor" width="180" height="180">
-				<h3>Best Treatment</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
-			</div>
-			<div class="col-md text-center m-4 pt-5 pb-2 services-show">
-				<img loading="lazy" src="img/realestate.webp" alt="realtor" width="180" height="180">
-				<h3>You ask it, we find it for you</h3>
+				<img class="rounded-circle" loading="lazy" src="img/city.webp" alt="realtor" width="250" height="250">
+				<h3 class="mt-4">Best Treatment</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
 			</div>
 			<div class="col-md text-center m-2 pt-5 pb-2 services-show">
-				<img loading="lazy" src="img/touricon.svg" alt="realtor" width="180" height="180">
-				<h3>Tour Services</h3>
+				<img class="rounded-circle" loading="lazy" src="img/house7.webp" alt="realtor" width="250" height="250">
+				<h3 class="mt-4">You ask it, we find it for you</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
+			</div>
+			<div class="col-md text-center m-2 pt-5 pb-2 services-show">
+				<img class="rounded-circle" loading="lazy" src="img/beach2.webp" alt="realtor" width="250" height="250">
+				<h3 class="mt-4">Tour Services</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
 			</div>
 		</div>
