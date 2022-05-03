@@ -2,10 +2,10 @@
 	<footer class="footer-basic">
 		<hr style="padding-top: 30px;">
 		<div class="social">
-			<a href="https://www.instagram.com/dreamland_propertiescr/"><i class="icon ion-social-instagram"></i></a>
-			<a href="#"><i class="icon ion-social-snapchat"></i></a>
-			<a href="#"><i class="icon ion-social-twitter"></i></a>
-			<a href="#"><i class="icon ion-social-facebook"></i></a>
+			<a href="https://m.facebook.com/Dreamland-properties-CR-108989764828595/"><i class="icon ion-social-facebook"></i></a>
+			<a href="https://wa.me/+50687239820"><i class="icon ion-social-whatsapp"></i></a>
+			<a href="#"><i class="icon ion-social-youtube"></i></a>
+			<a href="https://www.instagram.com/dreamland_propertiescr/"><i class="icon ion-social-instagram"></i></a>	
 		</div>
 
 		<div class="container-fluid">
