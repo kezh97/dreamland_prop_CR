@@ -47,18 +47,18 @@
 	<!-- OBJETIVES -->	
 	<section class="container py-4">
 		<div class="row">
-			<div class="col-md text-center m-2 pt-5 pb-2 services-show">
-				<img class="rounded-circle" loading="lazy" src="img/city.webp" alt="realtor" width="250" height="250">
+			<div class="col-md text-center pt-5 pb-2 services-show">
+				<img class="rounded-circle" loading="lazy" src="img/city.webp" alt="realtor" width="230" height="230">
 				<h3 class="mt-4">Best Treatment</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
 			</div>
-			<div class="col-md text-center m-2 pt-5 pb-2 services-show">
-				<img class="rounded-circle" loading="lazy" src="img/house7.webp" alt="realtor" width="250" height="250">
+			<div class="col-md text-center pt-5 pb-2 services-show">
+				<img class="rounded-circle" loading="lazy" src="img/house7.webp" alt="realtor" width="230" height="230">
 				<h3 class="mt-4">You ask it, we find it for you</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
 			</div>
-			<div class="col-md text-center m-2 pt-5 pb-2 services-show">
-				<img class="rounded-circle" loading="lazy" src="img/beach2.webp" alt="realtor" width="250" height="250">
+			<div class="col-md text-center pt-5 pb-2 services-show">
+				<img class="rounded-circle" loading="lazy" src="img/beach2.webp" alt="realtor" width="230" height="230">
 				<h3 class="mt-4">Tour Services</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
 			</div>
@@ -73,11 +73,11 @@
 	<!-- PREVIEW PROPERTIES -->
 	<section class="container py-5">
 		<div class="w-75 m-auto text-center" id="preview_props">
-			<h1 class="pb-5 border-top fs-2 border-3">Properties in <span class="CR">Costa Rica</span></h1>
+			<h1 class="pt-4 pb-5 border-top fs-2 border-3">Properties in <span class="CR">Costa Rica</span></h1>
 			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nemo, ipsa aliquam aliquid reiciendis modi iure doloribus repellat debitis earum voluptatum molestias obcaecati illum! Iure possimus quas harum esse laborum.</p>
 		</div>
 		<div class="mt-5 text-center">
-			<img loading="lazy" class="img-fluid" src="img/house1.webp" alt="house">
+			<img loading="lazy" class="img-fluid" src="img/house6.webp" alt="house">
 		</div>
 	</section>
 <?php
