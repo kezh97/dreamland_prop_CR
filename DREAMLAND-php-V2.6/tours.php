@@ -2,7 +2,7 @@
 
 include 'header.php';
 
-echo '<section>
+?>
 		<div class="container-fluid para-cont">
 			<section class="parallax">
 				<div class="para-background bg-1"></div>
@@ -27,21 +27,19 @@ echo '<section>
 				<h1>Fauna and flora</h1>
 			</section>
 		</div>
-	</section>
 
 	<section class="tour-intro py-5">
 		<div class="container">
-			<div class="introduction row">
-				<div class="tour-img col-md-7">
+			<div class="introduction row m-1">
+				<div class="tour-img col-md-7 pb-1">
 					<img src="img/beach-manzanillo1.webp" alt="">
 				</div>
 
-				<div class="tour-descr p-3 mt-3 mx-2 col-md-4">
-					<p class="h3 text-center">Este apartado es para darle un enfoque cultural sobre costa rica y sus bellezas naturales.</p>
-					<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quas? Officia assumenda sapiente aperiam temporibus minima sed atque tenetur hic cum, iure mollitia et alias quisquam optio magni laborum quas?Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Unde voluptatum a, nisi recusandae suscipit. Praesentium impedit iste veritatis expedita quasi sit quas corporis optio. Minima, nulla dicta excepturi distinctio amet. Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Nihil, quibusdam. Dolores praesentium labore, autem fugiat magni amet facilis atque at nulla dolore expedita maiores, iste deleniti qui molestias dolorum aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur.</p>
+				<div class="tour-descr col-md-5">
+					<div class="m-3 h-100">
+						<p class="h4 text-center">Este apartado es para darle un enfoque cultural sobre costa rica y sus bellezas naturales.</p>
+						<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quas? Officia assumenda sapiente aperiam temporibus minima sed atque tenetur hic cum, iure mollitia et alias quisquam optio magni laborum quas?Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Unde voluptatum a, nisi recusandae suscipit. Praesentium impedit iste veritatis expedita quasi sit quas corporis optio. Minima, nulla dicta excepturi distinctio amet. Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Nihil, quibusdam. Dolores praesentium labore, autem fugiat magni amet facilis atque at nulla dolore expedita maiores, iste deleniti qui molestias dolorum aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -84,8 +82,8 @@ echo '<section>
 
 
 		</div>
-	</section>'; 
-
-include 'footer.php'
+	</section>
+<?php 
+include 'footer.php';
 ?>
 	
