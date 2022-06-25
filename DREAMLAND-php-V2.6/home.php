@@ -9,21 +9,21 @@
     		<div class="carousel-item active" id="carousel_item_home">
       			<img class="" src="img/city.webp" alt="First slide">
       			<div class="carousel-caption home-caption">
-    				<h5>Dreamland CR</h5>
-    				<p>Your best choice to find your dreamhouse</p>
+    				<h5>The Dreamland CR</h5>
+    				<p>Making it real for you</p>
   				</div>
     		</div>
     		<div class="carousel-item" id="carousel_item_home">
       			<img class="" src="img/house7.webp" alt="Second slide">
       			<div class="carousel-caption home-caption">
     				<h5>Contact us!</h5>
-    				<p>Meet our best realtor.</p>
+    				<p>Your best choice to find your dreamhouse</p>
   				</div>
     		</div>
     		<div class="carousel-item" id="carousel_item_home">
       			<img class="" src="img/tour.webp" alt="Third slide">
       			<div class="carousel-caption home-caption">
-    				<h5>Explore Costa Ricas natural paradise</h5>
+    				<h5>Explore Costa Rica's natural paradise</h5>
     				<p>One with the nature</p>
   				</div>
     		</div>
@@ -49,18 +49,18 @@
 		<div class="row">
 			<div class="col-md text-center pt-5 pb-2 services-show">
 				<img class="rounded-circle" loading="lazy" src="img/city.webp" alt="realtor" width="230" height="230">
-				<h3 class="mt-4">Best Treatment</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
+				<h3 class="mt-4">Friendly Treatment</h3>
+				<p>We are compromised to give the best treat to our clients.</p>
 			</div>
 			<div class="col-md text-center pt-5 pb-2 services-show">
 				<img class="rounded-circle" loading="lazy" src="img/house7.webp" alt="realtor" width="230" height="230">
 				<h3 class="mt-4">You ask it, we find it for you</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
+				<p>Your dreamhouse at the reach of your hands.</p>
 			</div>
 			<div class="col-md text-center pt-5 pb-2 services-show">
 				<img class="rounded-circle" loading="lazy" src="img/beach2.webp" alt="realtor" width="230" height="230">
 				<h3 class="mt-4">Tour Services</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum accusantium expedita voluptate optio qui velit.</p>
+				<p>Explore and experience the best of Costa Rica's flora and fauna.</p>
 			</div>
 		</div>
 	</section>
