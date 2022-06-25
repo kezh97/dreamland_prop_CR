@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="img/logo1.webp">
-	<title>Dreamland Costa Rica</title>
+	<title>The Dreamland CR</title>
 
 	<!-- PERSONALIZE CSS STYLES -->
 	<link rel="stylesheet" href="style/main.css">
@@ -28,7 +28,7 @@
 	<!-- NAVBAR -->	
 	<nav class="navbar navbar-expand-lg py-2 navbar-light bg-light">
   		<a class="navbar-brand" href="index.php"> 
-  		 	<span class="fs-5 fw-bold text-uppercase brand">Dreamland Costa Rica</span>
+  		 	<span class="fs-5 fw-bold text-uppercase brand">The Dreamland CR</span>
   		</a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     		<span class="navbar-toggler-icon"></span>
@@ -40,10 +40,10 @@
         			<a class="nav-link pr-5 text-uppercase font-weight-normal" href="index.php">Home</span></a>
       			</li>
       			<li class="nav-item <?= ($activePage == 'list_properties') ? 'active':''; ?>">
-        			<a class="nav-link pr-5 text-uppercase font-weight-normal" href="list_properties.php" >Properties</a>
+        			<a class="nav-link pr-5 text-uppercase font-weight-normal" href="list_properties.php" >Dreamland Properties</a>
       			</li>
       			<li class="nav-item <?= ($activePage == 'tours') ? 'active':''; ?>">
-        			<a class="nav-link pr-5 text-uppercase font-weight-normal" href="tours.php">Tours</a>
+        			<a class="nav-link pr-5 text-uppercase font-weight-normal" href="tours.php">Dreamland Tours</a>
       			</li>
       			<li class="nav-item <?= ($activePage == 'contact') ? 'active':''; ?>">
         			<a class="nav-link pr-5 text-uppercase font-weight-normal" href="contact.php" >Contact</a>
