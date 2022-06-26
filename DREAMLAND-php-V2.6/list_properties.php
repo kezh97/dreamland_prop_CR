@@ -22,9 +22,9 @@ if (!$conn) {
 
 <!-- LIST AREA -->
 <section id="listing-property-section">
-	<div class="container-fluid py-5 px-4 text-center">
+	<div class="container-fluid py-5 px-4 text-center w-90">
 		<div class="listing-title pt-2 pb-5">
-			<p class="h1">Lista de propiedades</p>
+			<p class="h1">Lists of properties</p>
 			<hr class="w-75 mx-auto">
 		</div>
 		
