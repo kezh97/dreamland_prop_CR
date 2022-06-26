@@ -73,8 +73,8 @@
 	<!-- PREVIEW PROPERTIES -->
 	<section class="container py-5">
 		<div class="w-75 m-auto text-center" id="preview_props">
-			<h1 class="pt-4 pb-5 border-top fs-2 border-3">Properties in <span class="CR">Costa Rica</span></h1>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nemo, ipsa aliquam aliquid reiciendis modi iure doloribus repellat debitis earum voluptatum molestias obcaecati illum! Iure possimus quas harum esse laborum.</p>
+			<h1 class="pt-4 pb-5 border-top fs-2 border-3">About The Dreamland CR Team</h1>
+			<p class="h4">The Dreamland CR crew are a small group of collaborators who are in charge of offering services for sale of properties and tours packs all around in Costa Rica. We are compromised to give the best treatment to all ours affiliated.</p>
 		</div>
 		<div class="mt-5 text-center">
 			<img loading="lazy" class="img-fluid" src="img/house6.webp" alt="house">
