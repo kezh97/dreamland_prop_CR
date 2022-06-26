@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="img/logo1.webp">
 	<title>The Dreamland CR</title>
-
+	<meta name="description" content="The Dreamland CR is a small startup company in charge of giving real estate services and tours packs all around Costa Rica.">
 	<!-- PERSONALIZE CSS STYLES -->
 	<link rel="stylesheet" href="style/main.css">
 	<!-- GOOGLE FONTS API -->
