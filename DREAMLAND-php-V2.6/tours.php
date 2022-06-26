@@ -12,22 +12,62 @@ include 'header.php';
 	</div>
 </section>
 
-<section class="tour-intro py-5">
-	<div class="container">
-		<div class="introduction row m-1">
-			<div class="tour-img col-md-7 pb-1">
-				<img src="img/beach-manzanillo1.webp" alt="">
+<section class="tours-packs">
+	<div class="container-fluid py-5 px-4 text-center w-90">
+
+		<div class="listing-title pt-2 pb-5">
+			<p class="h1">Lists of Tour Packs</p>
+			<hr class="w-75 mx-auto">
+		</div>
+
+		<div class="row tours-packs-list">
+
+			<div class="outer-tours-packs-card col-lg-4 col-md-6 p-2">
+				<div class="tours-packs-card card">
+					<img src="img/nature1.webp" class="card-img-top" alt="...">
+	  				<div class="card-body">
+	    				<h5 class="card-title">Card title</h5>
+	    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    				<a href="#" class="btn btn-primary">Go somewhere</a>
+	  				</div>
+	  			</div>
 			</div>
 
-			<div class="tour-descr col-md-5">
-				<div class="m-3 h-100">
-					<p class="h4 text-center">Este apartado es para darle un enfoque cultural sobre costa rica y sus bellezas naturales.</p>
-					<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quas? Officia assumenda sapiente aperiam temporibus minima sed atque tenetur hic cum, iure mollitia et alias quisquam optio magni laborum quas?Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Unde voluptatum a, nisi recusandae suscipit. Praesentium impedit iste veritatis expedita quasi sit quas corporis optio. Minima, nulla dicta excepturi distinctio amet. Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Nihil, quibusdam. Dolores praesentium labore, autem fugiat magni amet facilis atque at nulla dolore expedita maiores, iste deleniti qui molestias dolorum aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				</div>
+			<div class="outer-tours-packs-card col-lg-4 col-md-6 p-2">
+				<div class="tours-packs-card card">
+					<img src="img/nature2.webp" class="card-img-top" alt="...">
+	  				<div class="card-body">
+	    				<h5 class="card-title">Card title</h5>
+	    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    				<a href="#" class="btn btn-primary">Go somewhere</a>
+	  				</div>
+	  			</div>
 			</div>
+
+			<div class="outer-tours-packs-card col-lg-4 col-md-6 p-2">
+				<div class="tours-packs-card card">
+					<img src="img/nature3.webp" class="card-img-top" alt="...">
+	  				<div class="card-body">
+	    				<h5 class="card-title">Card title</h5>
+	    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    				<a href="#" class="btn btn-primary">Go somewhere</a>
+	  				</div>
+	  			</div>
+			</div>
+
+			<div class="outer-tours-packs-card col-lg-4 col-md-6 p-2">
+				<div class="tours-packs-card card">
+					<img src="img/nature4.webp" class="card-img-top" alt="...">
+	  				<div class="card-body">
+	    				<h5 class="card-title">Card title</h5>
+	    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    				<a href="#" class="btn btn-primary">Go somewhere</a>
+	  				</div>
+	  			</div>
+			</div>
+
 		</div>
 	</div>
-	
 </section>
 
 <!-- PARALLAX SEPARATOR --> 
