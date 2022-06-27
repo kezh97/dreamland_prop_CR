@@ -57,7 +57,7 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 		<div class="row py-5 px-3">
 			<div class="modal-description text-center col-lg-6 ">
 				
-					<h3>Descripción principal</h3>
+					<h3>General description</h3>
 					<p class="text-justify">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Id eaque dolorum ipsum aspernatur, asperiores dolores officia nisi cupiditate, voluptatibus excepturi quia ut velit. Sint libero labore ipsam neque incidunt ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint repellat corrupti, ex nesciunt omnis impedit commodi quibusdam sunt laborum, vitae voluptates. Sed voluptas, aut dolorem repellat deserunt! Ea, modi maiores?</p>
 				
 			</div>
@@ -76,13 +76,13 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 		    			</div>
 		    			
 		    			<div class="text-center py-2 my-1" id="modal-overview-item">
-		    				<i class="fas fa-bed"></i> <?php  echo $row["rooms"]; ?> Cuartos
+		    				<i class="fas fa-bed"></i> <?php  echo $row["rooms"]; ?> Rooms
 		    			</div>
 		    			<div class="text-center py-2 my-1" id="modal-overview-item">
-		    				<i class="fas fa-bath"></i> <?php  echo $row["baths"]; ?> Baños
+		    				<i class="fas fa-bath"></i> <?php  echo $row["baths"]; ?> Baths
 		    			</div>
 		    			<div class="text-center py-2 my-1" id="modal-overview-item">
-		    				<i class="fas fa-car"></i> <?php  echo $row["parking"]; ?> Parqueos
+		    				<i class="fas fa-car"></i> <?php  echo $row["parking"]; ?> Parking Lots
 		    			</div>
 				</div>
 			
@@ -91,7 +91,7 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 
 		<div class="modal-table pt-3">
 			<div class="container">
-				<h4 class="h4 color-primary m-0">Características</h4>
+				<h4 class="h4 color-primary m-0">Features</h4>
 				<hr>
 				<div class="row">
 					<div class="col-5">
@@ -114,9 +114,9 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 			</div>
 		</div>
 
-		<div class="modal-multimedia">
+		<div class="modal-multimedia pt-3">
 			<div class="container">
-				<h4 class="h4 color-primary m-0">Video Recorrido</h4>
+				<h4 class="h4 color-primary m-0">Video Tour</h4>
 				<hr>
 				<iframe width="100%" height="600px" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
@@ -124,7 +124,7 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 
 		<div class="modal-map pt-3">
 			<div class="container">
-				<h4 class="h4 color-primary m-0">Ubicación</h4>
+				<h4 class="h4 color-primary m-0">Location</h4>
 				<hr>
 				<iframe src="<?php  echo $row["google_maps_location"]; ?>" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>
