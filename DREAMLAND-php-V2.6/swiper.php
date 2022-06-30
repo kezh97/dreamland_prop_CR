@@ -14,7 +14,7 @@ $result_general = $conn -> query($query_join);
 		<h6 class="h6 color-primary m-0">Recent</h6>
 		<h1 class="h1 h1-responsive mb-4">Recently Added Properties</h1>
 		<div class="text-right">
-			<a href="list-properties.php">Find More Project <i class="fas fa-long-arrow-alt-right"></i></a>
+			<a href="list_properties.php" class="btn btn-primary">Find More Project <i class="fas fa-long-arrow-alt-right"></i></a>
 		</div>
 
 		<div id="property-slider">
