@@ -75,7 +75,7 @@ include 'header.php';
 
 <section class="container gallery py-5">
 	<div class="gallery-intro text-center">
-		<h1>Galleria de fotos</h1>
+		<h1>Some of our tours</h1>
 		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius officiis, ipsum earum? Sapiente, sequi? Consequatur consequuntur, sunt maxime ea eaque perspiciatis!</p>
 	</div>
 
