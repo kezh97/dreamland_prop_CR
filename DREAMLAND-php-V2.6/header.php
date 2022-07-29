@@ -27,7 +27,7 @@
 <body>
 	<!-- NAVBAR -->	
 	<nav class="navbar navbar-expand-lg py-2 navbar-light bg-light">
-  		<a class="navbar-brand" href="index.php"> 
+  		<a class="navbar-brand" href="home.php"> 
   		 	<span class="fs-5 fw-bold text-uppercase brand">The Dreamland CR</span>
   		</a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,8 +36,8 @@
 
   		<div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
     		<ul class="navbar-nav ml-auto">
-      			<li class="nav-item <?= ($activePage == 'index') ? 'active':''; ?>">
-        			<a class="nav-link pr-5 text-uppercase font-weight-normal" href="index.php">Home</span></a>
+      			<li class="nav-item <?= ($activePage == 'home') ? 'active':''; ?>">
+        			<a class="nav-link pr-5 text-uppercase font-weight-normal" href="home.php">Home</span></a>
       			</li>
       			<li class="nav-item <?= ($activePage == 'list_properties') ? 'active':''; ?>">
         			<a class="nav-link pr-5 text-uppercase font-weight-normal" href="list_properties.php" >Dreamland Properties</a>
