@@ -40,7 +40,7 @@ var mySwiper = new Swiper('.swiper-container', {
 
 // MODAL ID SELECTOR
 $(document).ready(function(){
-	$('.boton').click(function(){
+	$('.boton_prop').click(function(){
 		var received_id = $(this).data('id');
 		$.ajax({
 			url:'ajax-listing-prop.php',
@@ -49,6 +49,20 @@ $(document).ready(function(){
 			success: function(response){
 				$('.modal-content').html(response);
 				$('#listing_modal').modal('show');
+			}
+		});
+
+	});
+
+	$('.boton_tour').click(function(){
+		var received_id = $(this).data('id');
+		$.ajax({
+			url:'tours.php',
+			type: 'post',
+			data: {tour_id: received_id},
+			success: function(response){
+				$('.modal-content').html(response);
+				$('#tour_modal').modal('show');
 			}
 		});
 
