@@ -12,8 +12,8 @@
 			<div class="row">
         		<div class="col-md-12 footer-nav">
         			<ul>
-        				<li><a href="index-php">HOME</a></li>
-        				<li><a href="list-properties.php">DREAMLAND PROPERTIES</a></li>
+        				<li><a href="home.php">HOME</a></li>
+        				<li><a href="list_properties.php">DREAMLAND PROPERTIES</a></li>
         				<li><a href="tours.php">DREAMLAND TOURS</a></li>
         				<li><a href="contact.php">CONTACT</a></li>
         			</ul>
