@@ -26,9 +26,9 @@ include 'header.php';
 				<div class="tours-packs-card card">
 					<img src="img/nature1.webp" class="card-img-top" alt="...">
 	  				<div class="card-body">
-	    				<h5 class="card-title">Card title</h5>
+	    				<h5 class="card-title">Tour Pack: 1</h5>
 	    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    				<a href="#" class="btn btn-primary">Go somewhere</a>
+	    				<button type="button" data-id="<?php echo $row['tour_id']; ?>" class="boton_tour btn btn-primary" data-bs-toggle="modal" data-bs-target="#tour_modal">Show More</button>	
 	  				</div>
 	  			</div>
 			</div>
@@ -37,9 +37,9 @@ include 'header.php';
 				<div class="tours-packs-card card">
 					<img src="img/nature2.webp" class="card-img-top" alt="...">
 	  				<div class="card-body">
-	    				<h5 class="card-title">Card title</h5>
+	    				<h5 class="card-title">Tour Pack: 2</h5>
 	    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    				<a href="#" class="btn btn-primary">Go somewhere</a>
+	    				<button type="button" data-id="<?php echo $row['tour_id']; ?>" class="boton_tour btn btn-primary" data-bs-toggle="modal" data-bs-target="#tour_modal">Show More</button>	
 	  				</div>
 	  			</div>
 			</div>
@@ -48,9 +48,9 @@ include 'header.php';
 				<div class="tours-packs-card card">
 					<img src="img/nature3.webp" class="card-img-top" alt="...">
 	  				<div class="card-body">
-	    				<h5 class="card-title">Card title</h5>
+	    				<h5 class="card-title">Tour Pack: 3</h5>
 	    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    				<a href="#" class="btn btn-primary">Go somewhere</a>
+	    				<button type="button" data-id="<?php echo $row['tour_id']; ?>" class="boton_tour btn btn-primary" data-bs-toggle="modal" data-bs-target="#tour_modal">Show More</button>	
 	  				</div>
 	  			</div>
 			</div>
@@ -59,15 +59,23 @@ include 'header.php';
 				<div class="tours-packs-card card">
 					<img src="img/nature4.webp" class="card-img-top" alt="...">
 	  				<div class="card-body">
-	    				<h5 class="card-title">Card title</h5>
+	    				<h5 class="card-title">Tour Pack: 4</h5>
 	    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    				<a href="#" class="btn btn-primary">Go somewhere</a>
+	    				<button type="button" data-id="<?php echo $row['tour_id']; ?>" class="boton_tour btn btn-primary" data-bs-toggle="modal" data-bs-target="#tour_modal">Show More</button>	
 	  				</div>
 	  			</div>
 			</div>
 
 		</div>
 	</div>
+</section>
+
+<section id="tours-modal">
+	<div class="modal fade" id="tour_modal" tabindex="-1" aria-labelledby="listing-name-label" aria-hidden="true">
+	  	<div class="modal-dialog modal-xl">
+	    	<div class="modal-content"></div>
+		</div>
+	</div>	
 </section>
 
 <!-- PARALLAX SEPARATOR --> 
