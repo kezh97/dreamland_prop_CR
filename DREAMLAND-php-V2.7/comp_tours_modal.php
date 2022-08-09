@@ -9,7 +9,7 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 	?>
 
 	<div class="modal-header">
-		<h4 class="modal-title" id="listing-name-label">DLCR-<?php echo $row["tour_id"].': '. $row["tour_name"] . ', '. $row["tour_name"]; ?></h4>
+		<h4 class="modal-title" id="listing-name-label">DLCR-<?php echo $row["tour_id"].': '. $row["tour_name"] ?></h4>
 		<i class="fas fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
 	</div>
 
@@ -93,15 +93,7 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 			<div class="container">
 				<h4 class="h4 color-primary m-0">Video Tour</h4>
 				<hr>
-				<iframe width="100%" height="600px" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-		</div>
-
-		<div class="modal-map pt-3">
-			<div class="container">
-				<h4 class="h4 color-primary m-0">Location</h4>
-				<hr>
-				<iframe src="<?php  echo $row["google_maps_location"]; ?>" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				<iframe id="ytplayer" width="100%" height="600px" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
