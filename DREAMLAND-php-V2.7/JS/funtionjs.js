@@ -68,3 +68,11 @@ $(document).ready(function(){
 
 	});
 });
+
+$('#listing_modal').on('hide.bs.modal', () => {
+  $('#ytplayer').attr('src', '');
+});
+
+$('#tour_modal').on('hide.bs.modal', () => {
+  $('#ytplayer').attr('src', '');
+});
