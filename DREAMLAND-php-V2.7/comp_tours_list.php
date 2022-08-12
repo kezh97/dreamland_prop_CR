@@ -14,7 +14,7 @@ if (mysqli_num_rows($result_general) > 0) {
 	  				<div class="card-body">
 	    				<h5 class="card-title">ID#<?php echo $row['tour_id'] ?>: <?php  echo $row["tour_name"]; ?></h5>
 	    				<hr class="w-75 mx-auto">
-	    				<p class="card-text"><?php echo $row['tour_description'] ?></p>
+	    				<p class="card-text" style="height: 100px;"><?php echo $row['tour_description'] ?></p>
 	    				<button type="button" data-id="<?php echo $row['tour_id'] ?>" class="boton_tour btn btn-primary" data-bs-toggle="modal" data-bs-target="#tour_modal">Show More</button>	
 	  				</div>
 	  			</div>
