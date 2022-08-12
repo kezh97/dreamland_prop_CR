@@ -9,7 +9,7 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 	?>
 
 	<div class="modal-header">
-		<h4 class="modal-title" id="listing-name-label">DLCR-<?php echo $row["tour_id"].': '. $row["tour_name"] ?></h4>
+		<h4 class="modal-title" id="listing-name-label">DLCRT-<?php echo $row["tour_id"].': '. $row["tour_name"] ?></h4>
 		<i class="fas fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
 	</div>
 
@@ -64,28 +64,18 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 
 		</div>
 
-		<div class="modal-table pt-3">
+		<div class="modal-tour-agenda pt-3">
 			<div class="container">
-				<h4 class="h4 color-primary m-0">Features</h4>
+				<h4 class="h4 color-primary m-0">Agenda</h4>
 				<hr>
 				<div class="row">
-					<div class="col-5">
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Espaciosa</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Céntrico</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Eco-friendly</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Pocos vecinos</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Vecindario seguro</p>
+					<div class="col-12">
+					<p class="fs-6"><i class="fas fa-caret-right"></i> Travel to XXXX</p>
+					<p class="fs-6"><i class="fas fa-caret-right"></i> Do XXXX activities</p>
+					<p class="fs-6"><i class="fas fa-caret-right"></i> Go to XXXX</p>
+					<p class="fs-6"><i class="fas fa-caret-right"></i> Visit XXXX</p>
+					<p class="fs-6"><i class="fas fa-caret-right"></i> Back to XXXX</p>
 				</div>
-
-				<div class="col-5">
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Espaciosa</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Céntrico</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Eco-friendly</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Parque para níños</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Condominio</p>
-				</div>
-				</div>
-				
 			</div>
 		</div>
 
