@@ -1,15 +1,15 @@
 <?php 
 include 'comp_connection.php';
 
-$id = $_POST['prop_id'];
-$query_join = "SELECT s1.property_id, s1.name, s1.location_name, s1.rooms, s1.baths, s1.description, s1.price, s1.parking, s1.google_maps_location, s2.img_path FROM `property` AS s1 JOIN img_repository AS s2 on s1.property_id = s2.property_id WHERE s1.property_id =".$id;
+$id = $_POST['tour_id'];
+$query_join = "SELECT s1.tour_id, s1.tour_name, s1.tour_description, s2.tour_img_repo_path FROM `tours_tb` AS s1 JOIN tour_img_repository AS s2 on s1.tour_id = s2.tour_id WHERE s1.tour_id =".$id;
 $result_query_by_id = mysqli_query($conn, $query_join);
 
 while ($row = mysqli_fetch_array($result_query_by_id)) {
 	?>
 
 	<div class="modal-header">
-		<h4 class="modal-title" id="listing-name-label">DLCR-<?php echo $row["property_id"].': '. $row["name"] . ', '. $row["location_name"]; ?></h4>
+		<h4 class="modal-title" id="listing-name-label">DLCRT-<?php echo $row["tour_id"].': '. $row["tour_name"] ?></h4>
 		<i class="fas fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
 	</div>
 
@@ -39,7 +39,7 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 			  		}	
 			  	?>
 					<div class="carousel-item list-carousel <?= $act ?>">
-			      		<img src="<?= $row['img_path']  ?>" class="w-100 h-100" alt="">
+			      		<img src="<?= $row['tour_img_repo_path']  ?>" class="w-100 h-100" alt="">
 			    	</div>	
 			    <?php $cont++; } ?>
 			  	</div>
@@ -55,62 +55,27 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 		</div>
 
 		<div class="row py-5 px-3">
-			<div class="modal-description text-center col-lg-6 ">
+			<div class="modal-description text-center col-lg-12 ">
 				
 					<h3>General description</h3>
-					<p class="text-justify">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Id eaque dolorum ipsum aspernatur, asperiores dolores officia nisi cupiditate, voluptatibus excepturi quia ut velit. Sint libero labore ipsam neque incidunt ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint repellat corrupti, ex nesciunt omnis impedit commodi quibusdam sunt laborum, vitae voluptates. Sed voluptas, aut dolorem repellat deserunt! Ea, modi maiores?</p>
+					<p> <?php echo $row['tour_description']; ?></p>
 				
 			</div>
 
-			<div class="modal-overview col-lg-6">
-			
-				<h4 class="h4 ">Overview</h4>
-				<hr>
-				<div class="">
-						<div class="text-center py-2 my-1" id="modal-overview-item">
-		    				<i class="fas fa-hashtag"></i> ID: DLCR-<?php  echo $row["property_id"]; ?>
-		    			</div>
-
-		    			<div class="text-center py-2 my-1" id="modal-overview-item">
-		    				<i class="fas fa-comments-dollar"></i> $<?php  echo $row["price"]; ?>
-		    			</div>
-		    			
-		    			<div class="text-center py-2 my-1" id="modal-overview-item">
-		    				<i class="fas fa-bed"></i> <?php  echo $row["rooms"]; ?> Rooms
-		    			</div>
-		    			<div class="text-center py-2 my-1" id="modal-overview-item">
-		    				<i class="fas fa-bath"></i> <?php  echo $row["baths"]; ?> Baths
-		    			</div>
-		    			<div class="text-center py-2 my-1" id="modal-overview-item">
-		    				<i class="fas fa-car"></i> <?php  echo $row["parking"]; ?> Parking Lots
-		    			</div>
-				</div>
-			
-			</div>
 		</div>
 
-		<div class="modal-table pt-3">
+		<div class="modal-tour-agenda pt-3">
 			<div class="container">
-				<h4 class="h4 color-primary m-0">Features</h4>
+				<h4 class="h4 color-primary m-0">Agenda</h4>
 				<hr>
 				<div class="row">
-					<div class="col-5">
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Espaciosa</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Céntrico</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Eco-friendly</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Pocos vecinos</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Vecindario seguro</p>
+					<div class="col-12">
+					<p class="fs-6"><i class="fas fa-caret-right"></i> Travel to XXXX</p>
+					<p class="fs-6"><i class="fas fa-caret-right"></i> Do XXXX activities</p>
+					<p class="fs-6"><i class="fas fa-caret-right"></i> Go to XXXX</p>
+					<p class="fs-6"><i class="fas fa-caret-right"></i> Visit XXXX</p>
+					<p class="fs-6"><i class="fas fa-caret-right"></i> Back to XXXX</p>
 				</div>
-
-				<div class="col-5">
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Espaciosa</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Céntrico</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Eco-friendly</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Parque para níños</p>
-					<p class="fs-6"><i class="fas fa-caret-right"></i> Condominio</p>
-				</div>
-				</div>
-				
 			</div>
 		</div>
 
@@ -118,15 +83,7 @@ while ($row = mysqli_fetch_array($result_query_by_id)) {
 			<div class="container">
 				<h4 class="h4 color-primary m-0">Video Tour</h4>
 				<hr>
-				<iframe width="100%" height="600px" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-		</div>
-
-		<div class="modal-map pt-3">
-			<div class="container">
-				<h4 class="h4 color-primary m-0">Location</h4>
-				<hr>
-				<iframe src="<?php  echo $row["google_maps_location"]; ?>" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				<iframe id="ytplayer" width="100%" height="600px" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
