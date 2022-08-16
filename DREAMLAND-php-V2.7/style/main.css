@@ -79,6 +79,25 @@ nav{
 	letter-spacing: 1.5px;
 }
 
+#dreamland-crew{
+	height: 100%;
+}
+
+.crew-box{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	width: 100%;
+	height: 100%;
+}
+
+.crew-box img{
+	width: 100%;
+}
+
+.crew-box p{
+	font-size: 18px;
+}
+
 /* PROPERTY SECTION  */
 .swiper {
   width: 600px;
@@ -163,6 +182,7 @@ nav{
 
 .list-carousel{
 	width: 100%;
+	height: 90vh;
 }
 
 .list-carousel img{
