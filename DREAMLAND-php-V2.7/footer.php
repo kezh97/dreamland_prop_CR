@@ -23,10 +23,15 @@
         
         <p class="copyright">The Dreamland CR © 2022</p>
 	</footer>
-
+	<!-- BOOSTRAP 5 JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- AOS JS INIT -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+  	</script>
+  	<!-- SWIPER JS -->
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
 	<!-- JQuery -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!-- Bootstrap tooltips -->
