@@ -22,6 +22,8 @@
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 	<!-- Bootstrap core CSS -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- AOS ANIMATION -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	
 </head>
 <body>
