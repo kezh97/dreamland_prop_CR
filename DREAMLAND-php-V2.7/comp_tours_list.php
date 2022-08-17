@@ -12,8 +12,11 @@ if (mysqli_num_rows($result_general) > 0) {
 				<div class="global-card card">
 					<img src="<?php  echo $row["tour_img_repo_path"];?>" class="card-img-top" alt="...">
 	  				<div class="card-body">
-	    				<h5 class="card-title">ID#<?php echo $row['tour_id'] ?>: <?php  echo $row["tour_name"]; ?></h5>
-	    				<hr class="w-75 mx-auto">
+	  					<div class="location-name pt-3">
+							<h4><strong>DLCRT-<?php echo $row["tour_id"]; ?> </strong></h4>
+							<p><?php  echo $row["tour_name"];?></p>
+							<hr class="w-75 mx-auto">
+						</div>
 	    				<p class="card-text"><?php echo $row['tour_description'] ?></p>
 	    				<button type="button" data-id="<?php echo $row['tour_id'] ?>" class="boton_tour btn btn-primary" data-bs-toggle="modal" data-bs-target="#tour_modal">Show More</button>	
 	  				</div>
