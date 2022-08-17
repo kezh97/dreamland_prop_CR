@@ -2,15 +2,6 @@
 include 'header.php'; 
 ?>
 
-<section>
-	<div class="container">
-		<div class="list_prop-about py-5" id="sect-intro">
-			<p class="h1 text-uppercase text-center"> >> about Dreamland Properties << </p>
-			<p class="h4 text-justify py-3">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quia illo est ipsa, dignissimos a quidem esse ratione autem dolor fuga pariatur dicta excepturi, dolore, non totam asperiores minima cum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, cumque, earum, voluptates sit debitis officiis dolores iste similique molestias dolore esse accusantium, perspiciatis nostrum nihil assumenda. Nostrum ea numquam similique.</p>
-		</div>
-	</div>
-</section>
-
 <!-- LIST AREA -->
 <section id="listing-property-section">
 	<div class="container-fluid py-5 px-4 text-center w-90">
