@@ -3,15 +3,6 @@
 include 'header.php';
 
 ?>
-<section>
-	<div class="container">
-		<div class="tour-about py-5" id="sect-intro">
-			<p class="h1 text-uppercase text-center"> >> about Dreamland Tours << </p>
-			<p class="h4 text-justify py-3">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quia illo est ipsa, dignissimos a quidem esse ratione autem dolor fuga pariatur dicta excepturi, dolore, non totam asperiores minima cum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, cumque, earum, voluptates sit debitis officiis dolores iste similique molestias dolore esse accusantium, perspiciatis nostrum nihil assumenda. Nostrum ea numquam similique.</p>
-		</div>
-	</div>
-</section>
-
 <section class="tours-packs">
 	<div class="container-fluid py-5 px-4 text-center w-90">
 
