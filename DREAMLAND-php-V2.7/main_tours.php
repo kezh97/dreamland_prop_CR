@@ -34,43 +34,6 @@ include 'header.php';
 	</div>	
 </section>
 
-<!-- PARALLAX SEPARATOR --> 
-
-
-<section class="container gallery py-5">
-	<div class="gallery-intro text-center">
-		<h1>Some of our tours</h1>
-		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius officiis, ipsum earum? Sapiente, sequi? Consequatur consequuntur, sunt maxime ea eaque perspiciatis!</p>
-	</div>
-
-	<div class="row">
-		<div class="col-md-4 p-1 gallery-item">
-			<img loading="lazy" src="img/nature1.webp" alt="">
-		</div>
-
-		<div class="col-md-4 p-1 gallery-item">
-			<img loading="lazy" src="img/nature2.webp" alt="">
-		</div>
-
-		<div class="col-md-4 p-1 gallery-item">
-			<img loading="lazy" src="img/nature3.webp" alt="">
-		</div>
-
-		<div class="col-md-4 p-1 gallery-item">
-			<img loading="lazy" src="img/nature4.webp" alt="">
-		</div>
-
-		<div class="col-md-4 p-1 gallery-item">
-			<img loading="lazy" src="img/nature5.webp" alt="">
-		</div>
-
-		<div class="col-md-4 p-1 gallery-item">
-			<img loading="lazy" src="img/nature6.webp" alt="">
-		</div>
-
-
-	</div>
-</section>
 <?php 
 include 'footer.php';
 ?>
